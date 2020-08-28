@@ -1,0 +1,44 @@
+{
+ "cards": [
+  {
+   "hidden": 0,
+   "label": "Protection Monitoring",
+   "links": "[\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"Focus Group Discussion\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"Key Information Interview\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"Direct Observation\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"Household Assessment\"\r\n\t}\r\n\r\n]"
+  },
+  {
+   "hidden": 0,
+   "label": "Mapping Services",
+   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Service\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Service Provider\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
+  },
+  {
+   "hidden": 0,
+   "label": "Referrals",
+   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Referral\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
+  },
+  {
+   "hidden": 0,
+   "label": "Location",
+   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Governorate\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"District\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Area\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
+  }
+ ],
+ "category": "Modules",
+ "charts": [],
+ "creation": "2020-08-28 01:20:57.061338",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Desk Page",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_standard": 1,
+ "label": "CPBNs",
+ "modified": "2020-08-28 02:02:57.101586",
+ "modified_by": "Administrator",
+ "module": "CPBNs",
+ "name": "CPBNs",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": []
+}
