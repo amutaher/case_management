@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "allow_import": 1,
  "autoname": "field:governorate",
  "creation": "2020-08-25 03:33:54.784084",
@@ -6,7 +7,8 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "governorate"
+  "governorate",
+  "country"
  ],
  "fields": [
   {
@@ -16,9 +18,17 @@
    "label": "Governorate",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
   }
  ],
- "modified": "2020-08-25 03:43:09.285711",
+ "links": [],
+ "modified": "2020-08-28 11:08:45.155954",
  "modified_by": "Administrator",
  "module": "CPBNs",
  "name": "Governorate",

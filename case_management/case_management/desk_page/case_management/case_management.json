@@ -3,21 +3,21 @@
   {
    "hidden": 0,
    "label": "Cases",
-   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Case\"\r\n\t\t\t\t}\r\n]"
+   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Basic Information\"\r\n\t\t\t\t}\r\n]"
   },
   {
    "hidden": 0,
-   "label": "GBV",
-   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"GBV Case\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"GBV Case Assessment\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
+   "label": "GBV Case Management",
+   "links": "[\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"GBV Case\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"GBV Case Assessment\"\r\n\t}\r\n]\r\n"
   },
   {
    "hidden": 0,
-   "label": "CP",
+   "label": "CP Case Management",
    "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"CP Case\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"CP Case Assessment\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
   },
   {
    "hidden": 0,
-   "label": "General",
+   "label": "General Case Management",
    "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"General Case\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"General Case Assessment\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
   },
   {
@@ -32,7 +32,12 @@
   }
  ],
  "category": "Modules",
- "charts": [],
+ "charts": [
+  {
+   "chart_name": "Cases Information",
+   "label": "Cases Information"
+  }
+ ],
  "creation": "2020-08-28 01:53:37.100833",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
@@ -43,12 +48,29 @@
  "idx": 0,
  "is_standard": 1,
  "label": "Case Management",
- "modified": "2020-08-28 01:56:54.172285",
+ "modified": "2020-08-29 05:14:22.378236",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Case Management",
  "owner": "Administrator",
  "pin_to_bottom": 0,
  "pin_to_top": 0,
- "shortcuts": []
+ "shortcuts": [
+  {
+   "color": "#ff4d4d",
+   "format": "{} Open",
+   "label": "Cases",
+   "link_to": "Basic Information",
+   "stats_filter": "{\"status\":[\"=\",\"Open\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "#9deca2",
+   "format": "{} Active",
+   "label": "GBV Cases",
+   "link_to": "GBV Case",
+   "stats_filter": "{\"status\":[\"=\",\"Open\"]}",
+   "type": "DocType"
+  }
+ ]
 }

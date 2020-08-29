@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "autoname": "field:case_id",
+ "creation": "2020-08-24 18:14:27.900359",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "case_id",
+  "case_reopened",
+  "name1",
+  "gender",
+  "date_of_birth",
+  "age",
+  "age_is_estimated",
+  "column_break_8",
+  "status",
+  "interview_date",
+  "accident_date",
+  "assessment_due_date",
+  "other_detail_section",
+  "detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Case Id",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "case_reopened",
+   "fieldtype": "Select",
+   "label": "Case Reopened",
+   "options": "No\nYes"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "default": "0",
+   "fieldname": "age_is_estimated",
+   "fieldtype": "Check",
+   "label": "Age is Estimated"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nHold\nClosed"
+  },
+  {
+   "default": "Today",
+   "fieldname": "interview_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Interview Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "accident_date",
+   "fieldtype": "Date",
+   "label": "Accident Date"
+  },
+  {
+   "fieldname": "assessment_due_date",
+   "fieldtype": "Date",
+   "label": "Assessment Due Date"
+  },
+  {
+   "fieldname": "other_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Other Detail"
+  },
+  {
+   "fieldname": "detail",
+   "fieldtype": "Text Editor",
+   "label": "Detail"
+  }
+ ],
+ "links": [],
+ "modified": "2020-08-28 10:21:28.519892",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "Basic Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "name1",
+ "track_changes": 1
+}
