@@ -1,5 +1,5 @@
 {
- "creation": "2020-08-24 18:17:42.660189",
+ "creation": "2020-08-24 18:16:34.003000",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -13,10 +13,10 @@
    "label": "Name1"
   }
  ],
- "modified": "2020-08-24 18:17:42.660189",
+ "modified": "2020-08-24 18:16:34.003000",
  "modified_by": "Administrator",
  "module": "Case Management",
- "name": "General Case Assessment",
+ "name": "CP Assessment",
  "owner": "Administrator",
  "permissions": [
   {

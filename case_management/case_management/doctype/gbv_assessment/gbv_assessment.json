@@ -5,15 +5,9 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
   "test"
  ],
  "fields": [
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name1"
-  },
   {
    "fieldname": "test",
    "fieldtype": "Data",
@@ -21,10 +15,10 @@
   }
  ],
  "links": [],
- "modified": "2020-08-29 03:02:00.952292",
+ "modified": "2020-08-29 03:17:25.802283",
  "modified_by": "Administrator",
  "module": "Case Management",
- "name": "GBV Case Assessment",
+ "name": "GBV Assessment",
  "owner": "Administrator",
  "permissions": [
   {

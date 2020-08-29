@@ -8,17 +8,17 @@
   {
    "hidden": 0,
    "label": "GBV Case Management",
-   "links": "[\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"GBV Case\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"GBV Case Assessment\"\r\n\t}\r\n]\r\n"
+   "links": "[\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"GBV Case\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"GBV Assessment\"\r\n\t}\r\n]\r\n"
   },
   {
    "hidden": 0,
    "label": "CP Case Management",
-   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"CP Case\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"CP Case Assessment\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
+   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"CP Case\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"CP Assessment\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
   },
   {
    "hidden": 0,
    "label": "General Case Management",
-   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"General Case\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"General Case Assessment\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
+   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"General Case\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"General Assessment\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
   },
   {
    "hidden": 0,
@@ -48,7 +48,7 @@
  "idx": 0,
  "is_standard": 1,
  "label": "Case Management",
- "modified": "2020-08-29 05:14:22.378236",
+ "modified": "2020-08-29 03:24:48.036784",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Case Management",
