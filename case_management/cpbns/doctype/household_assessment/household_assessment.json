@@ -1,20 +1,251 @@
 {
+ "actions": [],
  "allow_import": 1,
+ "autoname": "naming_series:",
  "creation": "2020-08-25 04:38:19.023058",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "sample",
+  "naming_series",
+  "aggregation",
+  "section_break_4",
+  "interviewer_name",
+  "governorate",
+  "district",
+  "sub_district",
+  "village_or_town",
+  "column_break_10",
+  "date_of_the_interview",
+  "habitation_type",
+  "personal_and_household_information_section",
+  "first_name",
+  "age",
+  "gender",
+  "column_break_17",
+  "martial_status",
+  "social_background",
+  "other_social_background",
+  "section_break_21",
+  "seeing",
+  "hearing",
+  "physical",
+  "column_break_25",
+  "communicating",
+  "mental",
+  "section_break_28",
+  "special_needed",
+  "what_specifically",
+  "other_special_needed",
+  "column_break_32",
+  "current_head",
+  "gender_current_head",
+  "age_current_head"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "sample",
+   "fieldtype": "HTML",
+   "label": "Sample",
+   "options": "<p style=\"\"><strong><span style='font-size: 13px; line-height: 107%; font-family: \"Times New Roman\",serif;'>Before starting the interview:&nbsp;</span></strong></p>\n<ul style=\"\">\n    <li><span style='line-height: 115%; font-family: \"Times New Roman\",serif;'>Introduce yourself and your position within Oxfam GB</span></li>\n    <li><span style='line-height: 115%; font-family: \"Times New Roman\",serif;'>Introduce the goals of these questions</span></li>\n</ul>\n<p style=\"\"><strong><span style='font-size: 13px; line-height: 115%; font-family: \"Times New Roman\",serif; color: #0F243E;'>Introduction</span></strong></p>\n<p style=\"\"><em><span style='font-size: 13px; line-height: 107%; font-family: \"Times New Roman\",serif;'>&nbsp;</span></em></p>\n<p style=\"\"><em><span style='font-size: 13px; line-height: 107%; font-family: \"Times New Roman\",serif;'>&nbsp;</span></em><span style='font-size: 13px; line-height: 107%; font-family: \"Times New Roman\",serif;'>Oxfam&rsquo; is planning to strengthen the community protection based network approach, responding to protection issues and concerns to prevent, mitigate and reduce the protection threats through awareness sessions for the community including capacity building for the community committee and local authorities, and improving the inclusion of most vulnerable people to identifying and reporting protection issues.</span></p>\n<p style=\"\"><span style='font-size: 13px; line-height: 107%; font-family: \"Times New Roman\",serif;'>We would like to ask you some questions about you, your family and community with the aim of having a better understanding of the current humanitarian needs and issues caused by the conflict and the displacement. The assessment is not intended to directly provide in-kind assistance based on it but it is an opportunity for us to learn from and listen to you. The questionnaire will take about one hour to complete. &nbsp;Any personally identifiable information that you provide will be kept strictly confidential. This is voluntary, and you can choose not to answer any or all of the questions. However, we hope that you will participate since the information you will provide is important to evaluate the methodology and effectiveness of the assistance and the issues you are facing. If you have any questions, please feel free to ask; if not, may I begin? &nbsp; &nbsp;&nbsp;</span></p>\n<p style=\"\"><strong><span style='font-size: 13px; line-height: 115%; font-family: \"Times New Roman\",serif; color: #0F243E;'>Informed Consent: &nbsp;</span></strong></p>\n<p style=\"\"><span style='font-size: 13px; line-height: 107%; font-family: \"Times New Roman\",serif;'>We would like you to give your consent to take part in this study / or to allow your child to take part in this study. Participation in this study will not get you any monetary benefit; however, will surely help us understand the community needs and protection concerns. Should you have any concerns or queries, you can contact Oxfam MEAL department through the hotline number shared with you.&nbsp;</span></p>"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "HH-ASS-.#####"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "aggregation",
+   "fieldtype": "Check",
+   "label": "I give my consent to participate / to allow to take part in the baseline study "
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "interviewer_name",
    "fieldtype": "Data",
-   "label": "Name1"
+   "label": "Interviewer name"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "label": "Governorate",
+   "options": "Governorate"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "sub_district",
+   "fieldtype": "Link",
+   "label": "Sub district",
+   "options": "Area"
+  },
+  {
+   "fieldname": "village_or_town",
+   "fieldtype": "Data",
+   "label": "Village or Town"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_of_the_interview",
+   "fieldtype": "Date",
+   "label": "Date of the Interview"
+  },
+  {
+   "description": "<p style='margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in; line-height: normal; font-size: 15px; font-family: \"Calibri\",sans-serif;'><strong><span style='font-size: 12px; font-family: \"Times New Roman\",serif; color: black;'>Urban</span></strong><span style='font-size: 12px; font-family: \"Times New Roman\",serif; color: black;'>&nbsp;= Cities, towns</span></p>\n<p style='margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in; line-height: normal; font-size: 15px; font-family: \"Calibri\",sans-serif;'><strong><span style='font-size: 12px; font-family: \"Times New Roman\",serif; color: black;'>Semi-urban</span></strong><span style='font-size: 12px; font-family: \"Times New Roman\",serif; color: black;'>&nbsp;= Not fully urban and not fully rural, can include villages small towns, and settlements close to towns</span></p>\n<p style='margin-top: 0in; margin-right: 0in; margin-bottom: 0in; margin-left: 0in; line-height: normal; font-size: 15px; font-family: \"Calibri\",sans-serif;'><strong><span style='font-size: 12px; font-family: \"Times New Roman\",serif; color: black;'>Rural&nbsp;</span></strong><span style='font-size: 12px; font-family: \"Times New Roman\",serif; color: black;'>= Countryside, small villages, isolated settlement</span></p>",
+   "fieldname": "habitation_type",
+   "fieldtype": "Select",
+   "label": "Habitation type",
+   "options": "Urban\nSemi-urban\nRural"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "personal_and_household_information_section",
+   "fieldtype": "Section Break",
+   "label": "Personal and Household Information"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Select",
+   "label": "Age",
+   "options": "18-49 years\n50-59 years\n60-69 years\nAbove 70 years"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "martial_status",
+   "fieldtype": "Select",
+   "label": "Martial Status",
+   "options": "Single\nMarried\nDivorced\nWidow"
+  },
+  {
+   "fieldname": "social_background",
+   "fieldtype": "Select",
+   "label": "Social Background",
+   "options": "IDP community\nHost Community\nIDP \u2018\u2019Muhamasheen\u2019\u2019\nHost community\nOther specify"
+  },
+  {
+   "depends_on": "eval:doc.social_background==\"Other specify\"",
+   "fieldname": "other_social_background",
+   "fieldtype": "Data",
+   "label": "Other Social Background"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "seeing",
+   "fieldtype": "Select",
+   "label": "Do you have difficulty seeing, even if wearing glasses",
+   "options": "Yes\nSome difficulty\nNot at all"
+  },
+  {
+   "fieldname": "hearing",
+   "fieldtype": "Select",
+   "label": "Do you have difficulty hearing, even if using a hearing aid",
+   "options": "Yes\nSome difficulty\nNot at all"
+  },
+  {
+   "fieldname": "physical",
+   "fieldtype": "Select",
+   "label": "Do you have a physical disability",
+   "options": "Yes\nSome difficulty\nNot at all"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "communicating",
+   "fieldtype": "Select",
+   "label": "Do you have difficulty communicating, for example understanding or being understood",
+   "options": "Yes\nSome difficulty\nNot at all"
+  },
+  {
+   "fieldname": "mental",
+   "fieldtype": "Select",
+   "label": "Mental health Disability",
+   "options": "Yes\nSome difficulty\nNot at all"
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "special_needed",
+   "fieldtype": "Select",
+   "label": "Do you have any special needs such as chronic diseases or others",
+   "options": "No\nYes"
+  },
+  {
+   "depends_on": "eval:doc.special_needed==\"Yes\"",
+   "fieldname": "what_specifically",
+   "fieldtype": "Select",
+   "label": "What Specifically",
+   "options": "Chronic illness\nPregnant / lactating women\nOther"
+  },
+  {
+   "depends_on": "eval:doc.what_specifically==\"Other\"",
+   "fieldname": "other_special_needed",
+   "fieldtype": "Data",
+   "label": "Other Special Needed"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "current_head",
+   "fieldtype": "Select",
+   "label": "Are you the current head of household",
+   "options": "Yes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.current_head==\"No\"",
+   "fieldname": "gender_current_head",
+   "fieldtype": "Select",
+   "label": "What is the gender of the head of household",
+   "options": "Male\nFemale"
+  },
+  {
+   "depends_on": "eval:doc.current_head==\"No\"",
+   "fieldname": "age_current_head",
+   "fieldtype": "Select",
+   "label": "And what is the head of household age",
+   "options": "18-49 years\n50-59 years\n60-69 years\nAbove 70 years"
   }
  ],
- "modified": "2020-08-25 04:38:19.023058",
+ "links": [],
+ "modified": "2020-08-29 17:10:41.223464",
  "modified_by": "Administrator",
  "module": "CPBNs",
  "name": "Household Assessment",

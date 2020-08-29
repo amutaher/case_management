@@ -106,8 +106,14 @@
    "label": "Detail"
   }
  ],
- "links": [],
- "modified": "2020-08-28 10:21:28.519892",
+ "links": [
+  {
+   "group": "GBV",
+   "link_doctype": "GBV Case",
+   "link_fieldname": "case_id"
+  }
+ ],
+ "modified": "2020-08-29 07:45:15.806283",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Basic Information",

@@ -1,21 +1,94 @@
 {
  "actions": [],
+ "autoname": "naming_series:",
  "creation": "2020-08-24 18:15:52.618791",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "test"
+  "naming_series",
+  "gbv_case",
+  "column_break_3",
+  "status",
+  "assessment_date",
+  "section_break_5",
+  "emotional_state",
+  "client_safety",
+  "why_not_safe",
+  "column_break_8",
+  "end_emotional_state"
  ],
  "fields": [
   {
-   "fieldname": "test",
-   "fieldtype": "Data",
-   "label": "Test"
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "GBV-ASS-.#####"
+  },
+  {
+   "fieldname": "gbv_case",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "GBV Case",
+   "options": "GBV Case",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nHold\nClosed"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "emotional_state",
+   "fieldtype": "Table MultiSelect",
+   "label": "Emotional state at the beginning of the interview",
+   "options": "Emotional States"
+  },
+  {
+   "default": "Today",
+   "fieldname": "assessment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Assessment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_emotional_state",
+   "fieldtype": "Select",
+   "label": "Emotional state at the end of the interview",
+   "options": "Calmer than at the start of interview\nSimilar to that at the start of interview\nMore upset than at the  start of interview"
+  },
+  {
+   "depends_on": "eval:doc.client_safety==\"No\"",
+   "fieldname": "why_not_safe",
+   "fieldtype": "Small Text",
+   "label": "Why not safe?"
+  },
+  {
+   "fieldname": "client_safety",
+   "fieldtype": "Select",
+   "label": "Will the client be safe when she or he leaves?",
+   "options": "Yes\nNo"
   }
  ],
  "links": [],
- "modified": "2020-08-29 03:17:25.802283",
+ "modified": "2020-08-29 08:32:35.191098",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Assessment",

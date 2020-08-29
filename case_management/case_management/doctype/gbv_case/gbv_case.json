@@ -138,8 +138,14 @@
    "options": "Rape\nSexual Assault\nPhysical Assault\nForced Marriage\nDenial of resources, opportunities or services\nPsychological / Emotional Abuse"
   }
  ],
- "links": [],
- "modified": "2020-08-29 04:48:17.054625",
+ "links": [
+  {
+   "group": "Assessments",
+   "link_doctype": "GBV Assessment",
+   "link_fieldname": "gbv_case"
+  }
+ ],
+ "modified": "2020-08-29 08:34:17.697524",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Case",
