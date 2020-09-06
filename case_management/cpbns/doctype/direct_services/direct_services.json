@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "creation": "2020-09-05 17:40:07.746116",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "service",
+  "when"
+ ],
+ "fields": [
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Service",
+   "options": "Direct Service"
+  },
+  {
+   "fieldname": "when",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "When"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2020-09-05 17:42:22.964352",
+ "modified_by": "Administrator",
+ "module": "CPBNs",
+ "name": "Direct Services",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

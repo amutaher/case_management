@@ -1,0 +1,30 @@
+{
+ "actions": [],
+ "creation": "2020-09-03 07:21:22.535494",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "services"
+ ],
+ "fields": [
+  {
+   "fieldname": "services",
+   "fieldtype": "Link",
+   "label": "Services",
+   "options": "Service"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2020-09-03 07:21:22.535494",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "Reported Services",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

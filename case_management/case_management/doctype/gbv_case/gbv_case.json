@@ -8,27 +8,32 @@
  "field_order": [
   "naming_series",
   "case_id",
-  "incident_date",
-  "report_date",
-  "column_break_5",
-  "report_by_survivor",
-  "status",
-  "survivor_information_section",
-  "client_age",
   "sex_of_client",
-  "displacement_status",
-  "column_break_11",
+  "client_age",
+  "martial_status",
+  "column_break_5",
   "country",
   "governorate",
   "district",
   "area",
-  "details_of_the_incident_section",
-  "type_of_incident_violence"
+  "column_break_10",
+  "status",
+  "report_date",
+  "displacement_status",
+  "survivor_information_section",
+  "disabilities",
+  "client_status",
+  "live_alone",
+  "column_break_19",
+  "caretaker_relation",
+  "other_relation",
+  "caretaker_martial_status"
  ],
  "fields": [
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Naming Series",
    "options": "GBV-.#####"
   },
@@ -42,14 +47,7 @@
    "reqd": 1
   },
   {
-   "fetch_from": "case_id.accident_date",
-   "fieldname": "incident_date",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "Incident Date",
-   "read_only": 1
-  },
-  {
+   "default": "Today",
    "fieldname": "report_date",
    "fieldtype": "Date",
    "label": "Report Date"
@@ -59,83 +57,124 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "report_by_survivor",
-   "fieldtype": "Select",
-   "label": "Report by Survivor",
-   "options": "Yes\nNo"
-  },
-  {
    "fieldname": "status",
    "fieldtype": "Select",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
+   "hidden": 1,
    "label": "Status",
    "options": "Open\nHold\nClosed"
   },
   {
    "fieldname": "survivor_information_section",
-   "fieldtype": "Section Break",
-   "label": "Survivor Information"
+   "fieldtype": "Section Break"
   },
   {
    "fetch_from": "case_id.age",
    "fieldname": "client_age",
    "fieldtype": "Int",
-   "label": "Client Age"
+   "label": "Client Age",
+   "read_only": 1
   },
   {
    "fetch_from": "case_id.gender",
    "fieldname": "sex_of_client",
    "fieldtype": "Select",
-   "label": "Sex of Client"
+   "label": "Sex of Client",
+   "options": "\nMale\nFemale",
+   "read_only": 1
   },
   {
-   "fieldname": "column_break_11",
-   "fieldtype": "Column Break"
-  },
-  {
-   "default": "Yemen",
+   "fetch_from": "case_id.country",
    "fieldname": "country",
    "fieldtype": "Link",
    "label": "Country",
-   "options": "Country"
+   "options": "Country",
+   "read_only": 1
   },
   {
+   "fetch_from": "case_id.governorate",
    "fieldname": "governorate",
    "fieldtype": "Link",
    "label": "Governorate",
-   "options": "Governorate"
+   "options": "Governorate",
+   "read_only": 1
   },
   {
+   "fetch_from": "case_id.district",
    "fieldname": "district",
    "fieldtype": "Link",
    "label": "District",
-   "options": "District"
+   "options": "District",
+   "read_only": 1
   },
   {
+   "fetch_from": "case_id.sub_district",
    "fieldname": "area",
    "fieldtype": "Link",
    "label": "Area",
-   "options": "Area"
+   "options": "Area",
+   "read_only": 1
   },
   {
    "fieldname": "displacement_status",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Displacement status at time of report",
    "options": "Refugee\nForeign National\nReturnee\nIDP\nAsylum Seeker\nStateless Person\nResident\nN/A"
   },
   {
-   "fieldname": "details_of_the_incident_section",
-   "fieldtype": "Section Break",
-   "label": "Details of the Incident"
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "type_of_incident_violence",
+   "fieldname": "disabilities",
    "fieldtype": "Select",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Type of incident/violence",
-   "options": "Rape\nSexual Assault\nPhysical Assault\nForced Marriage\nDenial of resources, opportunities or services\nPsychological / Emotional Abuse"
+   "label": "Is the client a Person with Disabilities",
+   "options": "No\nMental disability\nPhysical disability\nBoth"
+  },
+  {
+   "fieldname": "client_status",
+   "fieldtype": "Select",
+   "label": "Is the client an Unaccompanied Minor, Separated Child, or Other Vulnerable Child",
+   "options": "No\nUnaccompanied Minor\nSeparated Child\nOther Vulnerable Child"
+  },
+  {
+   "depends_on": "eval:doc.client_status != \"No\" && doc.client_age<= \"18\"",
+   "fieldname": "live_alone",
+   "fieldtype": "Select",
+   "label": "Does Client live alone",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.live_alone==\"No\"",
+   "fieldname": "caretaker_relation",
+   "fieldtype": "Select",
+   "label": "what is the relation between her/him and the caretaker",
+   "options": "\nParent / Guardian\nRelative\nSpouse / Cohabitating\nOther"
+  },
+  {
+   "depends_on": "eval:doc.caretaker_relation==\"Other\"",
+   "fieldname": "other_relation",
+   "fieldtype": "Data",
+   "label": "Other Relation"
+  },
+  {
+   "depends_on": "eval:doc.live_alone==\"No\"",
+   "fieldname": "caretaker_martial_status",
+   "fieldtype": "Select",
+   "label": "What is the caretaker\u2019s current marital status",
+   "options": "\nSingle\nMarried\nDivorced\nWidow"
+  },
+  {
+   "fetch_from": "case_id.martial_status",
+   "fieldname": "martial_status",
+   "fieldtype": "Select",
+   "label": "Martial Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidow",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
   }
  ],
  "links": [
@@ -145,7 +184,7 @@
    "link_fieldname": "gbv_case"
   }
  ],
- "modified": "2020-08-29 08:34:17.697524",
+ "modified": "2020-09-03 01:52:43.041138",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Case",

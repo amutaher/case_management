@@ -1,35 +1,28 @@
 {
  "actions": [],
- "allow_import": 1,
- "autoname": "field:service_name",
- "creation": "2020-08-24 18:03:45.479780",
+ "autoname": "field:relationship",
+ "creation": "2020-09-03 07:47:14.960028",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "service_name",
-  "description"
+  "relationship"
  ],
  "fields": [
   {
-   "fieldname": "service_name",
+   "fieldname": "relationship",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Service Name",
+   "label": "Relationship ",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Small Text",
-   "label": "Description"
   }
  ],
  "links": [],
- "modified": "2020-09-05 15:52:00.852111",
+ "modified": "2020-09-03 07:47:29.427584",
  "modified_by": "Administrator",
- "module": "CPBNs",
- "name": "Service",
+ "module": "Case Management",
+ "name": "Relationship",
  "owner": "Administrator",
  "permissions": [
   {
@@ -45,6 +38,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

@@ -1,19 +1,81 @@
 {
+ "actions": [],
+ "autoname": "naming_series:",
  "creation": "2020-08-24 18:18:25.152242",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "naming_series",
+  "case_id",
+  "column_break_3",
+  "plane_date",
+  "section_break_5",
+  "referred_services",
+  "section_break_7",
+  "direct_services",
+  "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name1"
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "Plan-.#####"
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Case Id",
+   "options": "Basic Information",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "plane_date",
+   "fieldtype": "Date",
+   "label": "Plane Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "referred_services",
+   "fieldtype": "Table",
+   "label": "Referred Services",
+   "options": "Referred Services"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "direct_services",
+   "fieldtype": "Table",
+   "label": "Direct Services",
+   "options": "Direct Services"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Case Action Plan",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2020-08-24 18:18:25.152242",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2020-09-05 21:24:38.312201",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Case Action Plan",

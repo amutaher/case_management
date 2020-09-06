@@ -1,0 +1,33 @@
+{
+ "actions": [],
+ "creation": "2020-09-03 07:55:30.075490",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "age_group"
+ ],
+ "fields": [
+  {
+   "fieldname": "age_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Age Group",
+   "options": "Age Group",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2020-09-03 07:55:30.075490",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "Age Groups",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

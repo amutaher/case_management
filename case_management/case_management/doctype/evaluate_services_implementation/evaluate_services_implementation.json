@@ -1,19 +1,91 @@
 {
+ "actions": [],
+ "autoname": "naming_series:",
  "creation": "2020-08-24 18:25:17.282334",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "naming_series",
+  "case_id",
+  "column_break_3",
+  "evaluation_date",
+  "section_break_5",
+  "safety_condition_is_stable",
+  "health_status_is_stable",
+  "psychosocial_health_improved",
+  "column_break_9",
+  "ensure_access_to_justice",
+  "needs_another_intervention"
  ],
  "fields": [
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name1"
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "EVA-.#####"
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Case Id",
+   "options": "Basic Information",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "evaluation_date",
+   "fieldtype": "Date",
+   "label": "Evaluation Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "safety_condition_is_stable",
+   "fieldtype": "Select",
+   "label": "Safety condition is stable",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "health_status_is_stable",
+   "fieldtype": "Select",
+   "label": "Health status is stable",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "psychosocial_health_improved",
+   "fieldtype": "Select",
+   "label": "Psychosocial health improved",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ensure_access_to_justice",
+   "fieldtype": "Select",
+   "label": "Ensure access to justice",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "needs_another_intervention",
+   "fieldtype": "Select",
+   "label": "Needs another intervention",
+   "options": "No\nYes"
   }
  ],
- "modified": "2020-08-24 18:25:17.282334",
+ "links": [],
+ "modified": "2020-09-06 03:35:21.323612",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Evaluate Services Implementation",

@@ -1,20 +1,52 @@
 {
+ "actions": [],
  "allow_import": 1,
+ "autoname": "field:provider_name",
  "creation": "2020-08-24 18:05:28.695324",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "provider_name",
+  "column_break_3",
+  "provider_email",
+  "section_break_4",
+  "services"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "provider_name",
    "fieldtype": "Data",
-   "label": "Name1"
+   "in_list_view": 1,
+   "label": "Provider Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "provider_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Provider Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table",
+   "label": "Services",
+   "options": "Services"
   }
  ],
- "modified": "2020-08-25 03:43:11.315128",
+ "links": [],
+ "modified": "2020-09-05 16:11:21.250007",
  "modified_by": "Administrator",
  "module": "CPBNs",
  "name": "Service Provider",

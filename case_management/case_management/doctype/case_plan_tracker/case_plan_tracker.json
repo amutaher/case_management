@@ -1,19 +1,134 @@
 {
+ "actions": [],
+ "autoname": "naming_series:",
  "creation": "2020-08-24 18:19:22.973116",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "naming_series",
+  "case_id",
+  "plan_id",
+  "column_break_4",
+  "status",
+  "type",
+  "section_break_7",
+  "referred_service",
+  "service_provider",
+  "provider_email",
+  "column_break_10",
+  "direct_service",
+  "timeline_section",
+  "planned_date",
+  "column_break_14",
+  "actual_date",
+  "progress",
+  "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "CPT-.#####"
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Case Id",
+   "options": "Basic Information"
+  },
+  {
+   "fieldname": "plan_id",
+   "fieldtype": "Link",
+   "label": "Plan Id",
+   "options": "Case Action Plan"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nIn Progress\nCompleted\nCanceled"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Referred Service\nDirect Service"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "referred_service",
+   "fieldtype": "Link",
+   "label": "Referred Service",
+   "options": "Service"
+  },
+  {
+   "fieldname": "service_provider",
+   "fieldtype": "Link",
+   "label": "Service Provider",
+   "options": "Service Provider"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "direct_service",
+   "fieldtype": "Link",
+   "label": "Direct Service",
+   "options": "Direct Service"
+  },
+  {
+   "fieldname": "timeline_section",
+   "fieldtype": "Section Break",
+   "label": "Timeline"
+  },
+  {
+   "fieldname": "planned_date",
+   "fieldtype": "Date",
+   "label": "Planned Date"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_date",
+   "fieldtype": "Date",
+   "label": "Actual Date"
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Percent",
+   "label": "Progress"
+  },
+  {
+   "fieldname": "provider_email",
    "fieldtype": "Data",
-   "label": "Name1"
+   "label": "Provider Email"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Case Plan Tracker",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2020-08-24 18:19:22.973116",
+ "links": [],
+ "modified": "2020-09-06 05:52:01.246102",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Case Plan Tracker",

@@ -7,32 +7,41 @@
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "gbv_case",
+  "case_id",
   "column_break_3",
   "status",
-  "assessment_date",
   "section_break_5",
-  "emotional_state",
-  "client_safety",
-  "why_not_safe",
+  "incident_details",
+  "section_break_7",
+  "stage_of_displacement",
+  "other_displacement",
+  "time_of_incident",
   "column_break_8",
-  "end_emotional_state"
+  "incident_location",
+  "other_location",
+  "section_break_14",
+  "type_of_incident_violence",
+  "incident_reported",
+  "type_of_services",
+  "column_break_18",
+  "harmful_traditional",
+  "previous_incidents_gbv",
+  "describe_incident",
+  "alleged_perpetrator_information_section",
+  "number_of_alleged_perpetrator",
+  "sex_of_alleged_perpetrator",
+  "column_break_25",
+  "age_group",
+  "relationship",
+  "occupation"
  ],
  "fields": [
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Naming Series",
    "options": "GBV-ASS-.#####"
-  },
-  {
-   "fieldname": "gbv_case",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "GBV Case",
-   "options": "GBV Case",
-   "reqd": 1
   },
   {
    "fieldname": "column_break_3",
@@ -41,54 +50,154 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
+   "hidden": 1,
    "label": "Status",
    "options": "Open\nHold\nClosed"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_5",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "emotional_state",
-   "fieldtype": "Table MultiSelect",
-   "label": "Emotional state at the beginning of the interview",
-   "options": "Emotional States"
-  },
-  {
-   "default": "Today",
-   "fieldname": "assessment_date",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "Assessment Date",
-   "reqd": 1
+   "fieldtype": "Section Break",
+   "label": "Details of the Incident"
   },
   {
    "fieldname": "column_break_8",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "end_emotional_state",
-   "fieldtype": "Select",
-   "label": "Emotional state at the end of the interview",
-   "options": "Calmer than at the start of interview\nSimilar to that at the start of interview\nMore upset than at the  start of interview"
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "label": "Case ID",
+   "options": "Basic Information"
   },
   {
-   "depends_on": "eval:doc.client_safety==\"No\"",
-   "fieldname": "why_not_safe",
-   "fieldtype": "Small Text",
-   "label": "Why not safe?"
+   "description": "Account of the incident/Description of the incident (summarize the details of the incident in client\u2019s words)",
+   "fieldname": "incident_details",
+   "fieldtype": "Text Editor",
+   "label": "Incident Details"
   },
   {
-   "fieldname": "client_safety",
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stage_of_displacement",
    "fieldtype": "Select",
-   "label": "Will the client be safe when she or he leaves?",
+   "label": "Stage of displacement at time of incident",
+   "options": "Not Displaced / Home Community\nPre-displacement\nDuring Flight\nDuring Refuge\nDuring Return / Transit\nPost-displacement\nOther"
+  },
+  {
+   "depends_on": "eval:doc.stage_of_displacement==\"Other\"",
+   "fieldname": "other_displacement",
+   "fieldtype": "Data",
+   "label": "Other Displacement"
+  },
+  {
+   "fieldname": "time_of_incident",
+   "fieldtype": "Select",
+   "label": "Time of day that incident took place",
+   "options": "Morning (sunrise to noon)\nAfternoon (noon to sunset)\nEvening/night (sunset to sunrise)\nUnknown/Not Applicable"
+  },
+  {
+   "fieldname": "incident_location",
+   "fieldtype": "Select",
+   "label": "Incident location / Where the incident took place",
+   "options": "Work\nHome\nRoad\nPrivate Place\nPublic Place\nOther"
+  },
+  {
+   "depends_on": "eval:doc.incident_location==\"Other\"",
+   "fieldname": "other_location",
+   "fieldtype": "Data",
+   "label": "Other location"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break",
+   "label": "Details of the Incident Cont"
+  },
+  {
+   "fieldname": "type_of_incident_violence",
+   "fieldtype": "Table MultiSelect",
+   "label": "Type of Incident Violence",
+   "options": "Violence Types"
+  },
+  {
+   "default": "0",
+   "fieldname": "incident_reported",
+   "fieldtype": "Check",
+   "label": "Has the client reported this incident anywhere else"
+  },
+  {
+   "depends_on": "eval:doc.incident_reported==\"1\"",
+   "fieldname": "type_of_services",
+   "fieldtype": "Table MultiSelect",
+   "label": "Type of Services",
+   "options": "Reported Services"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "harmful_traditional",
+   "fieldtype": "Select",
+   "label": "Was this incident a Harmful Traditional Practice",
    "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "previous_incidents_gbv",
+   "fieldtype": "Select",
+   "label": "Has the client had any previous incidents of GBV",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.previous_incidents_gbv==\"Yes\"",
+   "fieldname": "describe_incident",
+   "fieldtype": "Small Text",
+   "label": "Describe Incident"
+  },
+  {
+   "fieldname": "alleged_perpetrator_information_section",
+   "fieldtype": "Section Break",
+   "label": "Alleged Perpetrator Information"
+  },
+  {
+   "fieldname": "number_of_alleged_perpetrator",
+   "fieldtype": "Select",
+   "label": "Number of alleged perpetrator",
+   "options": "1\n2\n3\nMore than 3\nUnknown"
+  },
+  {
+   "fieldname": "sex_of_alleged_perpetrator",
+   "fieldtype": "Select",
+   "label": "Sex of alleged perpetrator",
+   "options": "Male\nFemale\nBoth male and femail"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "age_group",
+   "fieldtype": "Table MultiSelect",
+   "label": "Age group of alleged perpetrator",
+   "options": "Age Groups"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Table MultiSelect",
+   "label": "Alleged perpetrator relationship with survivor",
+   "options": "Relationships"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Table MultiSelect",
+   "label": "Main occupation of alleged perpetrator",
+   "options": "Occupations"
   }
  ],
  "links": [],
- "modified": "2020-08-29 08:32:35.191098",
+ "modified": "2020-09-03 08:19:25.564577",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Assessment",

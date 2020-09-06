@@ -1,51 +1,57 @@
 {
  "actions": [],
- "autoname": "field:case_id",
+ "autoname": "naming_series:",
  "creation": "2020-08-24 18:14:27.900359",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "case_id",
-  "case_reopened",
+  "naming_series",
+  "first_name",
+  "middle_name",
+  "last_name",
   "name1",
   "gender",
-  "date_of_birth",
-  "age",
-  "age_is_estimated",
+  "martial_status",
+  "displacement_status",
   "column_break_8",
   "status",
   "interview_date",
-  "accident_date",
-  "assessment_due_date",
-  "other_detail_section",
-  "detail"
+  "date_of_birth",
+  "age",
+  "caregiver_first_name",
+  "caregiver_middle_name",
+  "caregiver_last_name",
+  "name_of_caregiver",
+  "contact_number",
+  "regional_detail_section",
+  "country",
+  "column_break_20",
+  "governorate",
+  "column_break_22",
+  "district",
+  "column_break_24",
+  "sub_district"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Name",
-   "reqd": 1
+   "label": "Client Name",
+   "read_only": 1
   },
   {
    "fieldname": "case_id",
    "fieldtype": "Data",
-   "in_list_view": 1,
+   "hidden": 1,
    "label": "Case Id",
-   "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "case_reopened",
-   "fieldtype": "Select",
-   "label": "Case Reopened",
-   "options": "No\nYes"
   },
   {
    "fieldname": "gender",
    "fieldtype": "Select",
-   "label": "Gender",
+   "label": "Sex",
    "options": "Male\nFemale"
   },
   {
@@ -56,13 +62,8 @@
   {
    "fieldname": "age",
    "fieldtype": "Int",
-   "label": "Age"
-  },
-  {
-   "default": "0",
-   "fieldname": "age_is_estimated",
-   "fieldtype": "Check",
-   "label": "Age is Estimated"
+   "label": "Age",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_8",
@@ -71,10 +72,8 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Status",
-   "options": "Open\nHold\nClosed"
+   "options": "Open\nAssigned\nClosed"
   },
   {
    "default": "Today",
@@ -83,37 +82,124 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Interview Date",
+   "read_only": 1,
    "reqd": 1
   },
   {
-   "fieldname": "accident_date",
-   "fieldtype": "Date",
-   "label": "Accident Date"
+   "fieldname": "name_of_caregiver",
+   "fieldtype": "Data",
+   "label": "Name of Caregiver",
+   "read_only": 1
   },
   {
-   "fieldname": "assessment_due_date",
-   "fieldtype": "Date",
-   "label": "Assessment Due Date"
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number",
+   "options": "Phone"
   },
   {
-   "fieldname": "other_detail_section",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming  Series",
+   "options": "Code-.#####"
+  },
+  {
+   "fieldname": "regional_detail_section",
    "fieldtype": "Section Break",
-   "label": "Other Detail"
+   "label": "Regional detail"
   },
   {
-   "fieldname": "detail",
-   "fieldtype": "Text Editor",
-   "label": "Detail"
-  }
- ],
- "links": [
+   "default": "Yemen",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
   {
-   "group": "GBV",
-   "link_doctype": "GBV Case",
-   "link_fieldname": "case_id"
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "label": "Governorate",
+   "options": "Governorate"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_district",
+   "fieldtype": "Link",
+   "label": "Sub district",
+   "options": "Area"
+  },
+  {
+   "fieldname": "martial_status",
+   "fieldtype": "Select",
+   "label": "Martial Status",
+   "options": "Single\nMarried\nDivorced\nWidow"
+  },
+  {
+   "fieldname": "displacement_status",
+   "fieldtype": "Select",
+   "label": "Displacement status at time of report",
+   "options": "IDP community\nHost Community\nIDP \u2018\u2019Muhamasheen\u2019\u2019\nIDP in Host community"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.age <=\"18\"",
+   "fieldname": "caregiver_first_name",
+   "fieldtype": "Data",
+   "label": "Caregiver First Name",
+   "mandatory_depends_on": "eval:doc.age <=\"18\""
+  },
+  {
+   "depends_on": "eval:doc.age <=\"18\"",
+   "fieldname": "caregiver_middle_name",
+   "fieldtype": "Data",
+   "label": "Caregiver Middle Name",
+   "mandatory_depends_on": "eval:doc.age <=\"18\""
+  },
+  {
+   "depends_on": "eval:doc.age <=\"18\"",
+   "fieldname": "caregiver_last_name",
+   "fieldtype": "Data",
+   "label": "Caregiver Last Name",
+   "mandatory_depends_on": "eval:doc.age <=\"18\""
   }
  ],
- "modified": "2020-08-29 07:45:15.806283",
+ "links": [],
+ "modified": "2020-09-06 09:31:30.255295",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Basic Information",
@@ -134,6 +220,5 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "name1",
  "track_changes": 1
 }
