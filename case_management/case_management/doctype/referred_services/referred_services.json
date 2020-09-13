@@ -7,7 +7,9 @@
  "field_order": [
   "service",
   "who",
-  "when"
+  "when",
+  "status",
+  "tracker"
  ],
  "fields": [
   {
@@ -29,11 +31,26 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "When"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nApproved\nRejected\nIn Progress\nCompleted\nCanceled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tracker",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tracker",
+   "options": "Case Plan Tracker"
   }
  ],
  "istable": 1,
  "links": [],
- "modified": "2020-09-05 16:17:30.987743",
+ "modified": "2020-09-13 23:08:46.102875",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Referred Services",

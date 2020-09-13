@@ -1,7 +1,7 @@
 {
  "actions": [],
  "autoname": "naming_series:",
- "creation": "2020-08-24 18:26:42.044614",
+ "creation": "2020-09-08 02:15:59.862809",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -15,10 +15,14 @@
   "section_break_8",
   "case_close_reasons",
   "other_reason",
-  "references_of_closing_case_section",
-  "safety_plan",
-  "case_informed",
-  "supervisor_reviewed"
+  "communication_with_the_child_family_section",
+  "contact",
+  "column_break_12",
+  "close_informed",
+  "the_accountability_mechanisms_section",
+  "concerns_discussed",
+  "column_break_16",
+  "case_reviewed"
  ],
  "fields": [
   {
@@ -52,6 +56,12 @@
    "read_only": 1
   },
   {
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
    "fieldname": "section_break_8",
    "fieldtype": "Section Break"
   },
@@ -59,7 +69,7 @@
    "fieldname": "case_close_reasons",
    "fieldtype": "Select",
    "label": "Case Close Reasons",
-   "options": "The case has stop taken service\nThe case refuse to continue\nThe case move to another place\nThe service has been completed\nThe communication with case lost for mor than month\nOther"
+   "options": "\nThe child has moved out of the operational area\nhe child has died\nThe child and / or family no longer willing to participate\nAll objectives agreed in the care plan have been met\nNot all objectives agreed in the care plan have been met, however significant progress has been made\nThe child became an adult\nOther"
   },
   {
    "depends_on": "eval:doc.case_close_reasons==\"Other\"",
@@ -68,40 +78,54 @@
    "label": "Other Reason"
   },
   {
-   "fieldname": "references_of_closing_case_section",
+   "fieldname": "communication_with_the_child_family_section",
    "fieldtype": "Section Break",
-   "label": "References of Closing Case"
+   "label": "Communication with the child Family"
   },
   {
-   "fieldname": "safety_plan",
+   "fieldname": "contact",
    "fieldtype": "Select",
-   "label": "Safety Plan has been reviewed",
+   "label": "The Child and his / her family know who to contact in case of further problems and has the relevant contact details",
    "options": "\nYes\nNo"
   },
   {
-   "fieldname": "case_informed",
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "close_informed",
    "fieldtype": "Select",
-   "label": "The case has been informed for the possibility of resuming the service any time",
+   "label": "The child and his / her family have been informed that the case will be closed",
    "options": "\nYes\nNo"
   },
   {
-   "fieldname": "supervisor_reviewed",
+   "fieldname": "the_accountability_mechanisms_section",
+   "fieldtype": "Section Break",
+   "label": "The accountability mechanisms"
+  },
+  {
+   "fieldname": "concerns_discussed",
+   "fieldtype": "Select",
+   "label": "Any on-going concerns have been discussed with the Social Work Supervisor and / or Manager",
+   "options": "\nYes\nNo"
+  },
+  {
+   "description": "The Social Work Supervisor and / or Manager has reviewed the case file and signed off on case closure Advocacy issues have been noted and addressed to the relevant actors",
+   "fieldname": "case_reviewed",
    "fieldtype": "Select",
    "label": "The supervisor has reviewed closure the case/ exit strategy",
    "options": "\nYes\nNo"
   },
   {
-   "fieldname": "owner",
-   "fieldtype": "Link",
-   "label": "User",
-   "options": "User"
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
   }
  ],
  "links": [],
- "modified": "2020-09-03 11:23:23.010320",
+ "modified": "2020-09-08 02:28:44.348014",
  "modified_by": "Administrator",
  "module": "Case Management",
- "name": "Case Closure",
+ "name": "CP Closure Form",
  "owner": "Administrator",
  "permissions": [
   {

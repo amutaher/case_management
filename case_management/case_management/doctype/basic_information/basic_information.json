@@ -6,7 +6,6 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "case_id",
   "naming_series",
   "first_name",
   "middle_name",
@@ -17,8 +16,10 @@
   "displacement_status",
   "column_break_8",
   "status",
+  "assign_to",
   "interview_date",
   "date_of_birth",
+  "birthdate_is_approximate",
   "age",
   "caregiver_first_name",
   "caregiver_middle_name",
@@ -32,32 +33,35 @@
   "column_break_22",
   "district",
   "column_break_24",
-  "sub_district"
+  "sub_district",
+  "disability_detail_section",
+  "disability",
+  "seeing",
+  "hearing",
+  "column_break_33",
+  "physical",
+  "communicating",
+  "mental"
  ],
  "fields": [
   {
    "fieldname": "name1",
    "fieldtype": "Data",
    "label": "Client Name",
+   "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "case_id",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Case Id",
-   "unique": 1
   },
   {
    "fieldname": "gender",
    "fieldtype": "Select",
    "label": "Sex",
-   "options": "Male\nFemale"
+   "options": "\nMale\nFemale"
   },
   {
    "fieldname": "date_of_birth",
    "fieldtype": "Date",
-   "label": "Date of Birth"
+   "label": "Date of Birth",
+   "reqd": 1
   },
   {
    "fieldname": "age",
@@ -72,8 +76,12 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
-   "options": "Open\nAssigned\nClosed"
+   "no_copy": 1,
+   "options": "Open\nAssigned\nClosed",
+   "read_only": 1
   },
   {
    "default": "Today",
@@ -102,7 +110,8 @@
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Naming  Series",
-   "options": "Code-.#####"
+   "options": "Code-.#####",
+   "print_hide": 1
   },
   {
    "fieldname": "regional_detail_section",
@@ -150,30 +159,33 @@
    "fieldname": "martial_status",
    "fieldtype": "Select",
    "label": "Martial Status",
-   "options": "Single\nMarried\nDivorced\nWidow"
+   "options": "\nSingle\nMarried\nDivorced\nWidow"
   },
   {
    "fieldname": "displacement_status",
    "fieldtype": "Select",
    "label": "Displacement status at time of report",
-   "options": "IDP community\nHost Community\nIDP \u2018\u2019Muhamasheen\u2019\u2019\nIDP in Host community"
+   "options": "\nIDP community\nHost Community\nIDP \u2018\u2019Muhamasheen\u2019\u2019\nIDP in Host community"
   },
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
    "label": "First Name",
+   "print_hide": 1,
    "reqd": 1
   },
   {
    "fieldname": "middle_name",
    "fieldtype": "Data",
    "label": "Middle Name",
+   "print_hide": 1,
    "reqd": 1
   },
   {
    "fieldname": "last_name",
    "fieldtype": "Data",
    "label": "Last Name",
+   "print_hide": 1,
    "reqd": 1
   },
   {
@@ -196,10 +208,73 @@
    "fieldtype": "Data",
    "label": "Caregiver Last Name",
    "mandatory_depends_on": "eval:doc.age <=\"18\""
+  },
+  {
+   "depends_on": "eval:!(doc.__islocal)",
+   "fieldname": "assign_to",
+   "fieldtype": "Link",
+   "label": "Assign To",
+   "options": "User"
+  },
+  {
+   "fieldname": "disability_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Disability Detail"
+  },
+  {
+   "fieldname": "disability",
+   "fieldtype": "Select",
+   "label": "Do you have any type of disability",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.disability==\"Yes\"",
+   "fieldname": "seeing",
+   "fieldtype": "Select",
+   "label": "Do you have difficulty seeing, even if wearing glasses",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.disability==\"Yes\"",
+   "fieldname": "hearing",
+   "fieldtype": "Select",
+   "label": "Do you have difficulty hearing, even if using a hearing aid",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.disability==\"Yes\"",
+   "fieldname": "physical",
+   "fieldtype": "Select",
+   "label": "Do you have a physical disability",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.disability==\"Yes\"",
+   "fieldname": "communicating",
+   "fieldtype": "Select",
+   "label": "Do you have difficulty communicating, for example understanding or being understood",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.disability==\"Yes\"",
+   "fieldname": "mental",
+   "fieldtype": "Select",
+   "label": "Mental health Disability",
+   "options": "\nYes\nNo"
+  },
+  {
+   "default": "0",
+   "fieldname": "birthdate_is_approximate",
+   "fieldtype": "Check",
+   "label": "Birthdate is approximate"
   }
  ],
  "links": [],
- "modified": "2020-09-06 09:31:30.255295",
+ "modified": "2020-09-13 17:46:35.716067",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Basic Information",

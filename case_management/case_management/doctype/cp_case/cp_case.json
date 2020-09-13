@@ -1,19 +1,269 @@
 {
+ "actions": [],
+ "autoname": "naming_series:",
  "creation": "2020-08-24 18:16:10.943285",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "naming_series",
+  "case_id",
+  "owner",
+  "sex_of_child",
+  "child_date_of_birth",
+  "birthdate_is_approximate",
+  "child_age",
+  "column_break_8",
+  "country",
+  "governorate",
+  "district",
+  "area",
+  "column_break_13",
+  "status",
+  "report_date",
+  "section_break_16",
+  "sources_of_identification",
+  "parents_information_section",
+  "mother_name",
+  "is_the_mother_alive",
+  "father_name",
+  "is_the_father_alive",
+  "column_break_23",
+  "caregiver_name",
+  "caregiver_relationship",
+  "other_relationship",
+  "does_the_caregiver_know_the_family_of_the_child",
+  "section_break_28",
+  "child_current_care_arrangements",
+  "other_arrangements",
+  "column_break_31",
+  "accommodation",
+  "other_accommodation",
+  "family_members_living_with_the_child_section",
+  "family_members"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "CP-.#####"
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Case Id",
+   "options": "Basic Information",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Owner",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_id.gender",
+   "fieldname": "sex_of_child",
+   "fieldtype": "Select",
+   "label": "Sex of Child",
+   "options": "\nMale\nFemale",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_id.date_of_birth",
+   "fieldname": "child_date_of_birth",
+   "fieldtype": "Date",
+   "label": "Child Date of Birth",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fetch_from": "case_id.birthdate_is_approximate",
+   "fieldname": "birthdate_is_approximate",
+   "fieldtype": "Check",
+   "label": "Birthdate is approximate",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_id.age",
+   "fieldname": "child_age",
+   "fieldtype": "Int",
+   "label": "Child Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "case_id.country",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_id.governorate",
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "label": "Governorate",
+   "options": "Governorate",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_id.district",
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_id.sub_district",
+   "fieldname": "area",
+   "fieldtype": "Link",
+   "label": "Area",
+   "options": "Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Open\nHold\nClosed"
+  },
+  {
+   "default": "Today",
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sources_of_identification",
+   "fieldtype": "Select",
+   "label": "Sources of Identification",
+   "options": "\nChildren and families\nChild friendly spaces\nAdolescence Clubs\nCommunity members/civil society\nCommunity committee\nSchools and education services\nHealth services\nPopulation registration services\n(asylum seekers/ refugees)\nLaw enforcement agencies\nChild protection agencies\nOther humanitarian agencies/sectors"
+  },
+  {
+   "fieldname": "parents_information_section",
+   "fieldtype": "Section Break",
+   "label": "Parents Information"
+  },
+  {
+   "fieldname": "mother_name",
    "fieldtype": "Data",
-   "label": "Name1"
+   "label": "Mother name"
+  },
+  {
+   "fieldname": "is_the_mother_alive",
+   "fieldtype": "Select",
+   "label": "Is the mother alive",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fetch_from": "case_id.middle_name",
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father name"
+  },
+  {
+   "fieldname": "is_the_father_alive",
+   "fieldtype": "Select",
+   "label": "Is the father alive",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "case_id.name_of_caregiver",
+   "fieldname": "caregiver_name",
+   "fieldtype": "Data",
+   "label": "Caregiver Name"
+  },
+  {
+   "fieldname": "caregiver_relationship",
+   "fieldtype": "Select",
+   "label": "Caregiver Relationship with the child",
+   "options": "\nNuclear family\nExtended family\nOther relatives\nNon-relatives\nOthers"
+  },
+  {
+   "depends_on": "eval:doc.caregiver_relationship==\"Others\"",
+   "fieldname": "other_relationship",
+   "fieldtype": "Data",
+   "label": "Other Relationship"
+  },
+  {
+   "depends_on": "eval:doc.caregiver_relationship==\"Non-relatives\"",
+   "fieldname": "does_the_caregiver_know_the_family_of_the_child",
+   "fieldtype": "Select",
+   "label": "Does the caregiver know the family of the child",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "child_current_care_arrangements",
+   "fieldtype": "Select",
+   "label": "What is the child\u2019s current care arrangements",
+   "options": "\nStays with related caregiver\nStays with unrelated caregiver\nResidential Care Centre\nChild Headed Household Lives with peers/other children\nIndependent Living\nOther"
+  },
+  {
+   "depends_on": "eval:doc.child_current_care_arrangements==\"Other\"",
+   "fieldname": "other_arrangements",
+   "fieldtype": "Data",
+   "label": "Other Arrangements"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accommodation",
+   "fieldtype": "Select",
+   "label": "Which type of accommodation",
+   "options": "\nOwned house/apartment\nRenting house/apartment\nCollective Shelter/Centre\nTent (ITS or FTS)\nGarage or unfinished building\nOther"
+  },
+  {
+   "depends_on": "eval:doc.accommodation==\"Other\"",
+   "fieldname": "other_accommodation",
+   "fieldtype": "Data",
+   "label": "Other Accommodation"
+  },
+  {
+   "fieldname": "family_members_living_with_the_child_section",
+   "fieldtype": "Section Break",
+   "label": "Family Members living with the child"
+  },
+  {
+   "fieldname": "family_members",
+   "fieldtype": "Table",
+   "label": "Family Members",
+   "options": "Family Members"
   }
  ],
- "modified": "2020-08-24 18:16:10.943285",
+ "links": [],
+ "modified": "2020-09-08 01:31:38.782174",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "CP Case",

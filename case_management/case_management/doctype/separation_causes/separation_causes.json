@@ -1,0 +1,30 @@
+{
+ "actions": [],
+ "creation": "2020-09-08 01:44:20.649328",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cause"
+ ],
+ "fields": [
+  {
+   "fieldname": "cause",
+   "fieldtype": "Link",
+   "label": "Cause",
+   "options": "Separation Cause"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2020-09-08 01:44:20.649328",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "Separation Causes",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,19 +1,149 @@
 {
+ "actions": [],
+ "autoname": "naming_series:",
  "creation": "2020-08-24 18:16:34.003000",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "naming_series",
+  "case_id",
+  "column_break_3",
+  "status",
+  "assessment_date",
+  "section_break_6",
+  "comprehensive_reasons",
+  "section_break_8",
+  "date_of_separation",
+  "country",
+  "governorate",
+  "district",
+  "sub_district",
+  "column_break_14",
+  "street",
+  "landmarks",
+  "violence",
+  "cause_of_separation",
+  "section_break_19",
+  "protection_concerns"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "CP-ASS-.#####"
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Case Id",
+   "options": "Basic Information",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Open\nHold\nClosed"
+  },
+  {
+   "default": "Today",
+   "fieldname": "assessment_date",
+   "fieldtype": "Date",
+   "label": "Assessment Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comprehensive_reasons",
+   "fieldtype": "Table MultiSelect",
+   "label": "Reason for Comprehensive Assessment",
+   "options": "Comprehensive Reasons"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_separation",
+   "fieldtype": "Date",
+   "label": "Date of Separation"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "label": "Governorate",
+   "options": "Governorate"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "sub_district",
+   "fieldtype": "Link",
+   "label": "Sub district",
+   "options": "Area"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "street",
    "fieldtype": "Data",
-   "label": "Name1"
+   "label": "Street"
+  },
+  {
+   "fieldname": "landmarks",
+   "fieldtype": "Data",
+   "label": "Landmarks"
+  },
+  {
+   "fieldname": "violence",
+   "fieldtype": "Select",
+   "label": "Did the child face or witness any type of violence, threat or harm during his/her journey",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "cause_of_separation",
+   "fieldtype": "Table MultiSelect",
+   "label": "Cause of Separation",
+   "options": "Separation Causes"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break",
+   "label": "Protection Concerns and related follow up action required Details of Interviewer"
+  },
+  {
+   "fieldname": "protection_concerns",
+   "fieldtype": "Table MultiSelect",
+   "label": "Protection Concerns",
+   "options": "Protection Concerns"
   }
  ],
- "modified": "2020-08-24 18:16:34.003000",
+ "links": [],
+ "modified": "2020-09-08 02:06:08.923893",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "CP Assessment",

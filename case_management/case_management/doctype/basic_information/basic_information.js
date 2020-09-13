@@ -48,3 +48,19 @@ frappe.ui.form.on('Basic Information', {
 	
 	}
 })
+
+
+frappe.ui.form.on('Basic Information', {
+	refresh(frm) {
+		// your code here
+		var doc = frm.doc;
+		if(!frm.doc.__islocal && frm.perm[0].write && frm.doc.docstatus==0) {
+			if(frm.doc.status==="Open" && frm.doc.assign_to) {
+				frm.add_custom_button(__("Assign"), function() {
+					frm.set_value("status", "Assigned");
+					frm.save();
+				});
+			} 
+		}
+	},
+})

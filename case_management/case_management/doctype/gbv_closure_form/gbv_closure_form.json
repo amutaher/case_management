@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2020-08-24 18:26:42.044614",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "case_id",
+  "close_date",
+  "column_break_5",
+  "open_date",
+  "owner",
+  "section_break_8",
+  "case_close_reasons",
+  "other_reason",
+  "references_of_closing_case_section",
+  "safety_plan",
+  "case_informed",
+  "supervisor_reviewed"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "CC-.#####"
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "label": "Case Id",
+   "options": "Basic Information"
+  },
+  {
+   "default": "Today",
+   "fieldname": "close_date",
+   "fieldtype": "Date",
+   "label": "Close Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "case_id.interview_date",
+   "fieldname": "open_date",
+   "fieldtype": "Date",
+   "label": "Open Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "case_close_reasons",
+   "fieldtype": "Select",
+   "label": "Case Close Reasons",
+   "options": "The case has stop taken service\nThe case refuse to continue\nThe case move to another place\nThe service has been completed\nThe communication with case lost for mor than month\nOther"
+  },
+  {
+   "depends_on": "eval:doc.case_close_reasons==\"Other\"",
+   "fieldname": "other_reason",
+   "fieldtype": "Data",
+   "label": "Other Reason"
+  },
+  {
+   "fieldname": "references_of_closing_case_section",
+   "fieldtype": "Section Break",
+   "label": "References of Closing Case"
+  },
+  {
+   "fieldname": "safety_plan",
+   "fieldtype": "Select",
+   "label": "Safety Plan has been reviewed",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "case_informed",
+   "fieldtype": "Select",
+   "label": "The case has been informed for the possibility of resuming the service any time",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "supervisor_reviewed",
+   "fieldtype": "Select",
+   "label": "The supervisor has reviewed closure the case/ exit strategy",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  }
+ ],
+ "links": [],
+ "modified": "2020-09-03 11:23:23.010320",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "GBV Closure Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

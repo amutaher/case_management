@@ -54,7 +54,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Open\nIn Progress\nCompleted\nCanceled"
+   "options": "Open\nApproved\nRejected\nIn Progress\nCompleted\nCanceled"
   },
   {
    "fieldname": "type",
@@ -70,13 +70,15 @@
    "fieldname": "referred_service",
    "fieldtype": "Link",
    "label": "Referred Service",
-   "options": "Service"
+   "options": "Service",
+   "read_only": 1
   },
   {
    "fieldname": "service_provider",
    "fieldtype": "Link",
    "label": "Service Provider",
-   "options": "Service Provider"
+   "options": "Service Provider",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_10",
@@ -96,7 +98,8 @@
   {
    "fieldname": "planned_date",
    "fieldtype": "Date",
-   "label": "Planned Date"
+   "label": "Planned Date",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_14",
@@ -113,9 +116,11 @@
    "label": "Progress"
   },
   {
+   "fetch_from": "service_provider.provider_email",
    "fieldname": "provider_email",
    "fieldtype": "Data",
-   "label": "Provider Email"
+   "label": "Provider Email",
+   "read_only": 1
   },
   {
    "fieldname": "amended_from",
@@ -128,7 +133,7 @@
   }
  ],
  "links": [],
- "modified": "2020-09-06 05:52:01.246102",
+ "modified": "2020-09-13 21:21:29.365980",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Case Plan Tracker",

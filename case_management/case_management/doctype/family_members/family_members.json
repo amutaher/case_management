@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "creation": "2020-09-08 01:30:17.036319",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member_name",
+  "relationship_to_child",
+  "other_relationship",
+  "sex",
+  "column_break_5",
+  "marital_status",
+  "date_of_birth",
+  "specific_needs"
+ ],
+ "fields": [
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Member Name"
+  },
+  {
+   "fieldname": "relationship_to_child",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Relationship to child",
+   "options": "\nBrother\nSister\nUncle\nAunt\ngrandfather\ngrandmother\ncousin\nOther"
+  },
+  {
+   "depends_on": "eval:doc.relationship_to_child==\"Other\"",
+   "fieldname": "other_relationship",
+   "fieldtype": "Data",
+   "label": "Other Relationship"
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Sex",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidow"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "specific_needs",
+   "fieldtype": "Small Text",
+   "label": "Specific needs"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2020-09-08 01:32:19.757862",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "Family Members",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

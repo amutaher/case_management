@@ -9,6 +9,16 @@ from frappe.model.document import Document
 class CaseActionPlan(Document):
 	pass
 
+	def after_insert(self):
+
+		frappe.db.sql("UPDATE `tabGBV Case` set action_plan=1 where case_id=%s", (self.case_id))
+
+	def on_trash(self):
+		frappe.db.sql("UPDATE `tabGBV Case` set action_plan=0 where case_id=%s", (self.case_id))
+
+
+
+
 	def on_submit(self):
 		self.create_logs()
 

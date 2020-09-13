@@ -8,12 +8,12 @@
   {
    "hidden": 0,
    "label": "GBV Case Management",
-   "links": "[\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"GBV Case\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"GBV Assessment\"\r\n\t}\r\n]\r\n"
+   "links": "[\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"GBV Case\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"GBV Assessment\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"GBV Closure Form\"\r\n\t}\r\n]\r\n"
   },
   {
    "hidden": 0,
    "label": "CP Case Management",
-   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"CP Case\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"CP Assessment\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
+   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"CP Case\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"CP Assessment\"\r\n\t\t\t\t},\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"CP Closure Form\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
   },
   {
    "hidden": 0,
@@ -23,7 +23,7 @@
   {
    "hidden": 0,
    "label": "Implementation",
-   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Case Action Plan\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Case Plan Tracker\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Evaluate Services Implementation\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Case Closure\"\r\n\t\t\t\t}\r\n\t]\r\n"
+   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Case Action Plan\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Case Plan Tracker\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Evaluate Services Implementation\"\r\n\t\t\t\t}\r\n\r\n\t]\r\n"
   },
   {
    "hidden": 0,
@@ -48,7 +48,7 @@
  "idx": 0,
  "is_standard": 1,
  "label": "Case Management",
- "modified": "2020-08-29 03:24:48.036784",
+ "modified": "2020-09-13 17:05:13.506086",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Case Management",

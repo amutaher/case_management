@@ -8,6 +8,7 @@
  "field_order": [
   "naming_series",
   "case_id",
+  "owner",
   "sex_of_client",
   "client_age",
   "martial_status",
@@ -27,7 +28,13 @@
   "column_break_19",
   "caretaker_relation",
   "other_relation",
-  "caretaker_martial_status"
+  "caretaker_martial_status",
+  "section_break_24",
+  "gbv_assessment",
+  "action_plan",
+  "plan_tracker",
+  "evaluation",
+  "closure"
  ],
  "fields": [
   {
@@ -119,7 +126,7 @@
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Displacement status at time of report",
-   "options": "Refugee\nForeign National\nReturnee\nIDP\nAsylum Seeker\nStateless Person\nResident\nN/A"
+   "options": "\nRefugee\nForeign National\nReturnee\nIDP\nAsylum Seeker\nStateless Person\nResident\nN/A"
   },
   {
    "fieldname": "column_break_10",
@@ -129,13 +136,13 @@
    "fieldname": "disabilities",
    "fieldtype": "Select",
    "label": "Is the client a Person with Disabilities",
-   "options": "No\nMental disability\nPhysical disability\nBoth"
+   "options": "\nNo\nMental disability\nPhysical disability\nBoth"
   },
   {
    "fieldname": "client_status",
    "fieldtype": "Select",
    "label": "Is the client an Unaccompanied Minor, Separated Child, or Other Vulnerable Child",
-   "options": "No\nUnaccompanied Minor\nSeparated Child\nOther Vulnerable Child"
+   "options": "\nNo\nUnaccompanied Minor\nSeparated Child\nOther Vulnerable Child"
   },
   {
    "depends_on": "eval:doc.client_status != \"No\" && doc.client_age<= \"18\"",
@@ -175,16 +182,76 @@
   {
    "fieldname": "column_break_19",
    "fieldtype": "Column Break"
-  }
- ],
- "links": [
+  },
   {
-   "group": "Assessments",
-   "link_doctype": "GBV Assessment",
-   "link_fieldname": "gbv_case"
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "gbv_assessment",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "GBV Assessment",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "action_plan",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Action Plan",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "plan_tracker",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Plan Tracker",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "evaluation",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Evaluation",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "closure",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Closure",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
   }
  ],
- "modified": "2020-09-03 01:52:43.041138",
+ "links": [],
+ "modified": "2020-09-13 18:03:34.089113",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Case",
