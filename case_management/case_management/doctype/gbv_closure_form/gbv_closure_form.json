@@ -18,7 +18,9 @@
   "references_of_closing_case_section",
   "safety_plan",
   "case_informed",
-  "supervisor_reviewed"
+  "supervisor",
+  "supervisor_reviewed",
+  "amended_from"
  ],
  "fields": [
   {
@@ -31,8 +33,11 @@
   {
    "fieldname": "case_id",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Case Id",
-   "options": "Basic Information"
+   "options": "Basic Information",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "default": "Today",
@@ -85,6 +90,7 @@
    "options": "\nYes\nNo"
   },
   {
+   "depends_on": "eval:!doc.__islocal",
    "fieldname": "supervisor_reviewed",
    "fieldtype": "Select",
    "label": "The supervisor has reviewed closure the case/ exit strategy",
@@ -95,10 +101,27 @@
    "fieldtype": "Link",
    "label": "User",
    "options": "User"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "GBV Closure Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "description": "After save, the system will notify this user to confirm closing",
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "label": "Supervisor ",
+   "options": "User"
   }
  ],
+ "is_submittable": 1,
  "links": [],
- "modified": "2020-09-03 11:23:23.010320",
+ "modified": "2020-09-15 06:50:24.978997",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Closure Form",

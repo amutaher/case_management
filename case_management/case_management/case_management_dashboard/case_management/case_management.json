@@ -1,0 +1,25 @@
+{
+ "cards": [
+  {
+   "card": "Total Received Cases"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Cases Information",
+   "width": "Full"
+  }
+ ],
+ "creation": "2020-09-15 16:55:35.478437",
+ "dashboard_name": "Case Management",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2020-09-15 16:55:35.478437",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "Case Management",
+ "owner": "Administrator"
+}

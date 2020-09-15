@@ -22,7 +22,9 @@
   "the_accountability_mechanisms_section",
   "concerns_discussed",
   "column_break_16",
-  "case_reviewed"
+  "supervisor",
+  "case_reviewed",
+  "amended_from"
  ],
  "fields": [
   {
@@ -35,8 +37,10 @@
   {
    "fieldname": "case_id",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Case Id",
-   "options": "Basic Information"
+   "options": "Basic Information",
+   "reqd": 1
   },
   {
    "default": "Today",
@@ -110,6 +114,7 @@
    "options": "\nYes\nNo"
   },
   {
+   "depends_on": "eval:!doc.__islocal",
    "description": "The Social Work Supervisor and / or Manager has reviewed the case file and signed off on case closure Advocacy issues have been noted and addressed to the relevant actors",
    "fieldname": "case_reviewed",
    "fieldtype": "Select",
@@ -119,10 +124,27 @@
   {
    "fieldname": "column_break_16",
    "fieldtype": "Column Break"
+  },
+  {
+   "description": "After save, the system will notify this user to confirm closing",
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "label": "Supervisor",
+   "options": "User"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CP Closure Form",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
+ "is_submittable": 1,
  "links": [],
- "modified": "2020-09-08 02:28:44.348014",
+ "modified": "2020-09-15 07:31:15.313280",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "CP Closure Form",

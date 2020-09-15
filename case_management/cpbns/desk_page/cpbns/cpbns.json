@@ -18,7 +18,7 @@
   {
    "hidden": 0,
    "label": "Location",
-   "links": "[\r\n                {\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Country\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Governorate\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"District\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Area\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
+   "links": "[\r\n                {\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Country\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Governorate\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"District\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Area\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Street\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"Landmark\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
   }
  ],
  "category": "Modules",
@@ -33,7 +33,7 @@
  "idx": 0,
  "is_standard": 1,
  "label": "CPBNs",
- "modified": "2020-08-28 11:06:59.684565",
+ "modified": "2020-09-15 05:46:58.239231",
  "modified_by": "Administrator",
  "module": "CPBNs",
  "name": "CPBNs",

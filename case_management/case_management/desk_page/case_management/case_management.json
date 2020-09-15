@@ -48,7 +48,7 @@
  "idx": 0,
  "is_standard": 1,
  "label": "Case Management",
- "modified": "2020-09-13 17:05:13.506086",
+ "modified": "2020-09-15 17:01:22.334268",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Case Management",
@@ -71,6 +71,12 @@
    "link_to": "GBV Case",
    "stats_filter": "{\"status\":[\"=\",\"Open\"]}",
    "type": "DocType"
+  },
+  {
+   "icon": "octicon octicon-graph",
+   "label": "Dashboard",
+   "link_to": "Case Management",
+   "type": "Dashboard"
   }
  ]
 }

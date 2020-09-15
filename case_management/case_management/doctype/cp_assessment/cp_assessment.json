@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2020-08-24 18:16:34.003000",
  "doctype": "DocType",
@@ -72,6 +73,7 @@
    "options": "Comprehensive Reasons"
   },
   {
+   "depends_on": "eval: cur_frm.doc.comprehensive_reasons && cur_frm.doc.comprehensive_reasons.length && in_list(cur_frm.doc.comprehensive_reasons.map(function(r){ return r.reason}), \"Separated Child\")",
    "fieldname": "section_break_8",
    "fieldtype": "Section Break"
   },
@@ -110,13 +112,15 @@
   },
   {
    "fieldname": "street",
-   "fieldtype": "Data",
-   "label": "Street"
+   "fieldtype": "Link",
+   "label": "Street",
+   "options": "Street"
   },
   {
    "fieldname": "landmarks",
-   "fieldtype": "Data",
-   "label": "Landmarks"
+   "fieldtype": "Link",
+   "label": "Landmarks",
+   "options": "Landmark"
   },
   {
    "fieldname": "violence",
@@ -143,7 +147,7 @@
   }
  ],
  "links": [],
- "modified": "2020-09-08 02:06:08.923893",
+ "modified": "2020-09-15 19:10:58.617899",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "CP Assessment",
@@ -163,6 +167,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC",
+ "sort_order": "ASC",
  "track_changes": 1
 }
