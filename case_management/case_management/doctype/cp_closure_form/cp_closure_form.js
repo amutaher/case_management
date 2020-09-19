@@ -6,3 +6,10 @@ frappe.ui.form.on('CP Closure Form', {
 
 	// }
 });
+
+frappe.ui.form.on('CP Closure Form',  'before_submit',  function(frm) {
+    if (frm.doc.supervisor != (frappe.session.user)) {
+        msgprint('You are not permitted to close this case');
+        validated = false;
+    } 
+});
