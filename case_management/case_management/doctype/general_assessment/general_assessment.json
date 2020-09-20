@@ -1,19 +1,76 @@
 {
+ "actions": [],
+ "autoname": "naming_series:",
  "creation": "2020-08-24 18:17:42.660189",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "naming_series",
+  "case_id",
+  "column_break_3",
+  "status",
+  "assessment_date",
+  "section_break_6",
+  "vulnerability",
+  "section_break_8",
+  "case_description"
  ],
  "fields": [
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name1"
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "GA-.#####"
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Case Id",
+   "options": "Basic Information",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nHold\nClosed"
+  },
+  {
+   "default": "Today",
+   "fieldname": "assessment_date",
+   "fieldtype": "Date",
+   "label": "Assessment Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "vulnerability",
+   "fieldtype": "Select",
+   "label": "Vulnerability",
+   "options": "\nVery poor\nElderly care givers for children\nSingle elderly\nMental Disability\nPhysical Disability\nWomen in danger\nPeople with severe health problems\nPeople with critical diseases\nPsychological disorder"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "case_description",
+   "fieldtype": "Text Editor",
+   "label": "Case Description"
   }
  ],
- "modified": "2020-08-24 18:17:42.660189",
+ "links": [],
+ "modified": "2020-09-20 02:10:29.089838",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "General Assessment",

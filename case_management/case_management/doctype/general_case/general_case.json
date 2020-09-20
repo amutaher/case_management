@@ -1,19 +1,251 @@
 {
+ "actions": [],
+ "autoname": "naming_series:",
  "creation": "2020-08-24 18:17:23.572881",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "naming_series",
+  "case_id",
+  "owner",
+  "sex_of_child",
+  "child_date_of_birth",
+  "birthdate_is_approximate",
+  "child_age",
+  "column_break_8",
+  "country",
+  "governorate",
+  "district",
+  "area",
+  "column_break_13",
+  "status",
+  "report_date",
+  "section_break_16",
+  "education_level",
+  "other_education_level",
+  "column_break_19",
+  "which_type_of_accommodation",
+  "other_type",
+  "family_members_section",
+  "women_numbers",
+  "column_break_24",
+  "men_numbers",
+  "column_break_26",
+  "boys_numbers",
+  "column_break_28",
+  "girls_numbers",
+  "column_break_30",
+  "total_members",
+  "section_break_32",
+  "main_occupation"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "GC-.#####"
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Case Id",
+   "options": "Basic Information",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Owner",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_id.gender",
+   "fieldname": "sex_of_child",
+   "fieldtype": "Select",
+   "label": "Sex of Child",
+   "options": "\nMale\nFemale",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_id.date_of_birth",
+   "fieldname": "child_date_of_birth",
+   "fieldtype": "Date",
+   "label": "Child Date of Birth",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fetch_from": "case_id.birthdate_is_approximate",
+   "fieldname": "birthdate_is_approximate",
+   "fieldtype": "Check",
+   "label": "Birthdate is approximate",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_id.age",
+   "fieldname": "child_age",
+   "fieldtype": "Int",
+   "label": "Child Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "case_id.country",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_id.governorate",
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "label": "Governorate",
+   "options": "Governorate",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_id.district",
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_id.sub_district",
+   "fieldname": "area",
+   "fieldtype": "Link",
+   "label": "Area",
+   "options": "Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Open\nHold\nClosed"
+  },
+  {
+   "default": "Today",
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Report Date"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "education_level",
+   "fieldtype": "Select",
+   "label": "Education Level",
+   "options": "\nIlliteracy\nBasics of Reading and Writing\nElementary\nHigh School\nDiploma\nBachelor\nMaster\nPhD\nother"
+  },
+  {
+   "depends_on": "eval:doc.education_level==\"Other\"",
+   "fieldname": "other_education_level",
    "fieldtype": "Data",
-   "label": "Name1"
+   "label": "Other Education Level"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "which_type_of_accommodation",
+   "fieldtype": "Select",
+   "label": "Which type of accommodation",
+   "options": "\nOwned house/apartment\nRenting house/apartment\nCollective Shelter/Centre\nTent (ITS or FTS)\nGarage or unfinished building\nOther"
+  },
+  {
+   "depends_on": "eval:doc.which_type_of_accommodation==\"Other\"",
+   "fieldname": "other_type",
+   "fieldtype": "Data",
+   "label": "Other type"
+  },
+  {
+   "fieldname": "family_members_section",
+   "fieldtype": "Section Break",
+   "label": "Family Members"
+  },
+  {
+   "default": "0",
+   "fieldname": "women_numbers",
+   "fieldtype": "Int",
+   "label": "Women numbers"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "men_numbers",
+   "fieldtype": "Int",
+   "label": "Men numbers"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "boys_numbers",
+   "fieldtype": "Int",
+   "label": "Boys numbers"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "girls_numbers",
+   "fieldtype": "Int",
+   "label": "Girls numbers"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_members",
+   "fieldtype": "Int",
+   "label": "Total Members",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "main_occupation",
+   "fieldtype": "Link",
+   "label": "Main Occupation ",
+   "options": "Occupation"
   }
  ],
- "modified": "2020-08-24 18:17:23.572881",
+ "links": [],
+ "modified": "2020-09-20 02:01:51.396756",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "General Case",
