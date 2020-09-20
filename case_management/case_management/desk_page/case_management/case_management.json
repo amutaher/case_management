@@ -18,7 +18,7 @@
   {
    "hidden": 0,
    "label": "General Case Management",
-   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"General Case\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"General Assessment\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
+   "links": "[\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"General Case\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"General Assessment\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"type\": \"doctype\",\r\n\t\t\t\t\t\"name\": \"General Closure Form\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n"
   },
   {
    "hidden": 0,
@@ -48,7 +48,7 @@
  "idx": 0,
  "is_standard": 1,
  "label": "Case Management",
- "modified": "2020-09-15 17:01:22.334268",
+ "modified": "2020-09-20 17:10:16.132540",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Case Management",

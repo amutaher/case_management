@@ -14,7 +14,8 @@
   "section_break_6",
   "vulnerability",
   "section_break_8",
-  "case_description"
+  "case_description",
+  "action_plan"
  ],
  "fields": [
   {
@@ -67,10 +68,18 @@
    "fieldname": "case_description",
    "fieldtype": "Text Editor",
    "label": "Case Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "action_plan",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Action Plan",
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2020-09-20 02:10:29.089838",
+ "modified": "2020-09-20 19:26:38.965452",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "General Assessment",

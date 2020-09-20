@@ -8,6 +8,8 @@
  "field_order": [
   "naming_series",
   "case_id",
+  "action_plan",
+  "from_assessment",
   "column_break_3",
   "evaluation_date",
   "section_break_5",
@@ -16,7 +18,8 @@
   "psychosocial_health_improved",
   "column_break_9",
   "ensure_access_to_justice",
-  "needs_another_intervention"
+  "needs_another_intervention",
+  "closure"
  ],
  "fields": [
   {
@@ -82,10 +85,33 @@
    "fieldtype": "Select",
    "label": "Needs another intervention",
    "options": "No\nYes"
+  },
+  {
+   "fieldname": "action_plan",
+   "fieldtype": "Link",
+   "label": "Action Plan",
+   "options": "Case Action Plan",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "action_plan.from_assessment",
+   "fieldname": "from_assessment",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "From Assessment",
+   "options": "GBV Assessment\nCP Assessment\nGeneral Assessment",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "closure",
+   "fieldtype": "Check",
+   "label": "Closure",
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2020-09-06 03:35:21.323612",
+ "modified": "2020-09-20 21:58:56.396642",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Evaluate Services Implementation",

@@ -34,7 +34,8 @@
   "column_break_25",
   "age_group",
   "relationship",
-  "occupation"
+  "occupation",
+  "action_plan"
  ],
  "fields": [
   {
@@ -202,10 +203,18 @@
    "fieldtype": "Date",
    "label": "Assessment Date",
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "action_plan",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Action Plan",
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2020-09-13 18:44:03.239163",
+ "modified": "2020-09-20 20:48:30.718220",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Assessment",

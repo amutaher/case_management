@@ -1,0 +1,26 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2020-09-20 17:30:17.265644",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "GBV Closure Form",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Please Close Case {{doc.case_id}}",
+ "modified": "2020-09-20 17:30:32.232370",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "GBV Closure Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "email_by_document_field": "supervisor"
+  }
+ ],
+ "send_system_notification": 0,
+ "subject": "{{ doc.case_id }} Closure"
+}

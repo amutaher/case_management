@@ -232,14 +232,14 @@
    "fieldname": "seeing",
    "fieldtype": "Select",
    "label": "Do you have difficulty seeing, even if wearing glasses",
-   "options": "\nYes\nSome difficulty\nNo at all"
+   "options": "\nNo\nYes, some difficulty\nYes, a lot of difficulty\nYes, totally"
   },
   {
    "depends_on": "eval:doc.disability==\"Yes\"",
    "fieldname": "hearing",
    "fieldtype": "Select",
    "label": "Do you have difficulty hearing, even if using a hearing aid",
-   "options": "\nYes\nSome difficulty\nNo at all"
+   "options": "\nNo\nYes, some difficulty\nYes, a lot of difficulty\nYes, totally"
   },
   {
    "fieldname": "column_break_33",
@@ -250,21 +250,21 @@
    "fieldname": "physical",
    "fieldtype": "Select",
    "label": "Do you have a physical disability",
-   "options": "\nYes\nSome difficulty\nNo at all"
+   "options": "\nNo\nYes, some difficulty\nYes, a lot of difficulty\nYes, totally"
   },
   {
    "depends_on": "eval:doc.disability==\"Yes\"",
    "fieldname": "communicating",
    "fieldtype": "Select",
    "label": "Do you have difficulty communicating, for example understanding or being understood",
-   "options": "\nYes\nSome difficulty\nNo at all"
+   "options": "\nNo\nYes, some difficulty\nYes, a lot of difficulty\nYes, totally"
   },
   {
    "depends_on": "eval:doc.disability==\"Yes\"",
    "fieldname": "mental",
    "fieldtype": "Select",
    "label": "Mental health Disability",
-   "options": "\nYes\nSome difficulty\nNo at all"
+   "options": "\nNo\nYes, some difficulty\nYes, a lot of difficulty\nYes, totally"
   },
   {
    "default": "0",
@@ -274,7 +274,7 @@
   }
  ],
  "links": [],
- "modified": "2020-09-14 20:37:04.845569",
+ "modified": "2020-09-20 16:23:21.087261",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Basic Information",

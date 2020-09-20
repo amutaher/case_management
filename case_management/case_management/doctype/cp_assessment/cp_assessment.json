@@ -26,7 +26,8 @@
   "violence",
   "cause_of_separation",
   "section_break_19",
-  "protection_concerns"
+  "protection_concerns",
+  "action_plan"
  ],
  "fields": [
   {
@@ -144,10 +145,18 @@
    "fieldtype": "Table MultiSelect",
    "label": "Protection Concerns",
    "options": "Protection Concerns"
+  },
+  {
+   "default": "0",
+   "fieldname": "action_plan",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Action Plan",
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2020-09-15 19:10:58.617899",
+ "modified": "2020-09-20 19:27:04.794451",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "CP Assessment",

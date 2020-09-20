@@ -8,14 +8,18 @@
  "field_order": [
   "naming_series",
   "case_id",
+  "from_assessment",
+  "assessment",
   "consent_given",
   "column_break_3",
   "plane_date",
+  "progress",
   "section_break_5",
   "referred_services",
   "section_break_7",
   "direct_services",
-  "amended_from"
+  "amended_from",
+  "evaluation"
  ],
  "fields": [
   {
@@ -32,8 +36,7 @@
    "in_standard_filter": 1,
    "label": "Case Id",
    "options": "Basic Information",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "column_break_3",
@@ -83,11 +86,39 @@
    "fieldname": "consent_given",
    "fieldtype": "Check",
    "label": "Has the survivor given the consent  "
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Percent",
+   "hidden": 1,
+   "label": "Progress",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_assessment",
+   "fieldtype": "Select",
+   "label": "From Assessment",
+   "options": "GBV Assessment\nCP Assessment\nGeneral Assessment"
+  },
+  {
+   "fieldname": "assessment",
+   "fieldtype": "Dynamic Link",
+   "label": "Assessment",
+   "options": "from_assessment",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "evaluation",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Evaluation",
+   "read_only": 1
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-09-13 19:08:16.295884",
+ "modified": "2020-09-20 19:57:46.622413",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Case Action Plan",
