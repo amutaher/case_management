@@ -23,6 +23,11 @@
   "displacement_status",
   "survivor_information_section",
   "disabilities",
+  "seeing",
+  "hearing",
+  "physical",
+  "communicating",
+  "mental",
   "client_status",
   "live_alone",
   "column_break_19",
@@ -71,6 +76,7 @@
    "options": "Open\nHold\nClosed"
   },
   {
+   "depends_on": "eval:doc.case_id",
    "fieldname": "survivor_information_section",
    "fieldtype": "Section Break"
   },
@@ -133,12 +139,15 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "case_id.disability",
    "fieldname": "disabilities",
    "fieldtype": "Select",
    "label": "Is the client a Person with Disabilities",
-   "options": "\nNo\nMental disability\nPhysical disability\nBoth"
+   "options": "\nYes\nNo",
+   "read_only": 1
   },
   {
+   "depends_on": "eval:doc.client_age<18",
    "fieldname": "client_status",
    "fieldtype": "Select",
    "label": "Is the client an Unaccompanied Minor, Separated Child, or Other Vulnerable Child",
@@ -248,10 +257,55 @@
    "print_hide": 1,
    "read_only": 1,
    "report_hide": 1
+  },
+  {
+   "depends_on": "eval:doc.disabilities==\"Yes\"",
+   "fetch_from": "case_id.seeing",
+   "fieldname": "seeing",
+   "fieldtype": "Select",
+   "label": "Do you have difficulty seeing, even if wearing glasses",
+   "options": "\nNo\nYes, some difficulty\nYes, a lot of difficulty\nYes, totally",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.disabilities==\"Yes\"",
+   "fetch_from": "case_id.hearing",
+   "fieldname": "hearing",
+   "fieldtype": "Select",
+   "label": "Do you have difficulty hearing, even if using a hearing aid",
+   "options": "\nNo\nYes, some difficulty\nYes, a lot of difficulty\nYes, totally",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.disabilities==\"Yes\"",
+   "fetch_from": "case_id.physical",
+   "fieldname": "physical",
+   "fieldtype": "Select",
+   "label": "Do you have a physical disability",
+   "options": "\nNo\nYes, some difficulty\nYes, a lot of difficulty\nYes, totally",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.disabilities==\"Yes\"",
+   "fetch_from": "case_id.communicating",
+   "fieldname": "communicating",
+   "fieldtype": "Select",
+   "label": "Do you have difficulty communicating, for example understanding or being understood",
+   "options": "\nNo\nYes, some difficulty\nYes, a lot of difficulty\nYes, totally",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.disabilities==\"Yes\"",
+   "fetch_from": "case_id.mental",
+   "fieldname": "mental",
+   "fieldtype": "Select",
+   "label": "Mental health Disability",
+   "options": "\nNo\nYes, some difficulty\nYes, a lot of difficulty\nYes, totally",
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2020-09-13 18:03:34.089113",
+ "modified": "2020-09-20 23:25:06.828000",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Case",

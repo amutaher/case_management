@@ -67,6 +67,31 @@ frappe.ui.form.on('Case Action Plan', {
 	}
   });
 
+frappe.ui.form.on('Case Action Plan', {
+	refresh(frm) {
+		if(!frm.doc.__islocal && frm.doc.docstatus==0) {
+             frm.add_custom_button(__('Update Tracker'), function() { frm.trigger("update_tracker") },
+			    "fa fa-file-text");
+           
+		}
+	},
+	update_tracker: function (frm) {
+	    if (frm.is_dirty()) {
+            frappe.show_alert('Please save form before Creat Tracker Log')
+        }
+        else {
+		return frappe.call({
+			doc: frm.doc,
+			method: 'update_logs',
+			callback: function(r) {
+			    frm.refresh();
+			}
+		})
+        }
+	}
+  });
+
+
 
 frappe.ui.form.on('Case Action Plan', {
 	refresh: function(frm) {
@@ -76,6 +101,9 @@ frappe.ui.form.on('Case Action Plan', {
 			},__('View'));
 			frm.add_custom_button(__("Assessment"), function() {
 				frappe.set_route("List", "GBV Assessment", {"case_id": frm.doc.case_id});
+			},__('View'));
+			frm.add_custom_button(__("Tracker"), function() {
+				frappe.set_route("List", "Case Plan Tracker", {"case_id": frm.doc.case_id});
 			},__('View'));
 			frm.add_custom_button(__("Evaluation"), function() {
 				frappe.set_route("List", "Evaluate Services Implementation", {"case_id": frm.doc.case_id});
@@ -91,6 +119,9 @@ frappe.ui.form.on('Case Action Plan', {
 			frm.add_custom_button(__("Assessment"), function() {
 				frappe.set_route("List", "CP Assessment", {"case_id": frm.doc.case_id});
 			},__('View'));
+			frm.add_custom_button(__("Tracker"), function() {
+				frappe.set_route("List", "Case Plan Tracker", {"case_id": frm.doc.case_id});
+			},__('View'));
 			frm.add_custom_button(__("Evaluation"), function() {
 				frappe.set_route("List", "Evaluate Services Implementation", {"case_id": frm.doc.case_id});
 			},__('View'));
@@ -104,6 +135,9 @@ frappe.ui.form.on('Case Action Plan', {
 			},__('View'));
 			frm.add_custom_button(__("Assessment"), function() {
 				frappe.set_route("List", "General Assessment", {"case_id": frm.doc.case_id});
+			},__('View'));
+			frm.add_custom_button(__("Tracker"), function() {
+				frappe.set_route("List", "Case Plan Tracker", {"case_id": frm.doc.case_id});
 			},__('View'));
 			frm.add_custom_button(__("Evaluation"), function() {
 				frappe.set_route("List", "Evaluate Services Implementation", {"case_id": frm.doc.case_id});

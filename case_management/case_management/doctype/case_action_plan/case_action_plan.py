@@ -39,6 +39,27 @@ class CaseActionPlan(Document):
 
 		self.reload()
 
+	def update_logs(self):
+		self.check_permission('write')
+		args = frappe._dict({
+			"plan_id": self.name,
+			"case_id": self.case_id,
+		})
+		if self.referred_services:
+			for t in self.get("referred_services"):
+				if t.tracker:
+					track = frappe.get_doc("Case Plan Tracker", t.tracker)
+					track.db_set("referred_service", t.service)
+					track.db_set("service_provider", t.who)
+					track.db_set("planned_date", t.when)
+			for d in self.get("direct_services"):
+				if d.tracker:
+					track = frappe.get_doc("Case Plan Tracker", t.tracker)
+					track.db_set("direct_service", d.service)
+					track.db_set("planned_date", d.when)
+
+
+
 def create_log(referred_service, service_provider, planned_date, args, publish_progress=True):
 	if frappe.db.sql("""select count(name) from `tabCase Plan Tracker` where docstatus < 2  
 	and referred_service = %s and service_provider = %s and planned_date = %s""", (referred_service,service_provider,planned_date))[0][0]==0:		

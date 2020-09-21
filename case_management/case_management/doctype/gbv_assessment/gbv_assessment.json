@@ -173,7 +173,7 @@
    "fieldname": "sex_of_alleged_perpetrator",
    "fieldtype": "Select",
    "label": "Sex of alleged perpetrator",
-   "options": "\nMale\nFemale\nBoth male and femail"
+   "options": "\nMale\nFemale\nBoth Male and Female"
   },
   {
    "fieldname": "column_break_25",
@@ -214,7 +214,7 @@
   }
  ],
  "links": [],
- "modified": "2020-09-20 20:48:30.718220",
+ "modified": "2020-09-20 23:28:50.498559",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Assessment",

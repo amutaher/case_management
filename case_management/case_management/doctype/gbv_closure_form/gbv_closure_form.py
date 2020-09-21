@@ -19,8 +19,8 @@ class GBVClosureForm(Document):
 		frappe.db.sql("UPDATE `tabEvaluate Services Implementation` set docstatus=1 where case_id=%s", (self.case_id))
 		frappe.db.sql("UPDATE `tabCase Plan Tracker` set docstatus=1 where case_id=%s", (self.case_id))
 		frappe.db.sql("UPDATE `tabCase Action Plan` set docstatus=1 where case_id=%s", (self.case_id))
-		frappe.db.sql("UPDATE `tabGBV Assessment` set docstatus=1 where case_id=%s", (self.case_id))
-		frappe.db.sql("UPDATE `tabGBV Case` set docstatus=1 where case_id=%s", (self.case_id))
-		frappe.db.sql("UPDATE `tabBasic Information` set docstatus=1 where name=%s", (self.case_id))
+		frappe.db.sql("UPDATE `tabGBV Assessment` set docstatus=1 , status='Closed' where case_id=%s", (self.case_id))
+		frappe.db.sql("UPDATE `tabGBV Case` set docstatus=1 , status='Closed' where case_id=%s", (self.case_id))
+		frappe.db.sql("UPDATE `tabBasic Information` set docstatus=1 , status='Closed' where name=%s", (self.case_id))
 
 

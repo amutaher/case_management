@@ -90,7 +90,7 @@
    "options": "\nYes\nNo"
   },
   {
-   "depends_on": "eval:!doc.__islocal",
+   "depends_on": "eval:!doc.__islocal && doc.supervisor==frappe.session.user",
    "fieldname": "supervisor_reviewed",
    "fieldtype": "Select",
    "label": "The supervisor has reviewed closure the case/ exit strategy",
@@ -121,7 +121,7 @@
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2020-09-20 17:11:23.821155",
+ "modified": "2020-09-21 01:49:47.631627",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Closure Form",

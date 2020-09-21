@@ -12,6 +12,7 @@
   "from_assessment",
   "column_break_3",
   "evaluation_date",
+  "status",
   "section_break_5",
   "safety_condition_is_stable",
   "health_status_is_stable",
@@ -56,19 +57,19 @@
    "fieldname": "safety_condition_is_stable",
    "fieldtype": "Select",
    "label": "Safety condition is stable",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "health_status_is_stable",
    "fieldtype": "Select",
    "label": "Health status is stable",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "psychosocial_health_improved",
    "fieldtype": "Select",
    "label": "Psychosocial health improved",
-   "options": "Yes\nNo"
+   "options": "\nYes\nNo"
   },
   {
    "fieldname": "column_break_9",
@@ -84,7 +85,7 @@
    "fieldname": "needs_another_intervention",
    "fieldtype": "Select",
    "label": "Needs another intervention",
-   "options": "No\nYes"
+   "options": "\nNo\nYes"
   },
   {
    "fieldname": "action_plan",
@@ -108,10 +109,18 @@
    "fieldtype": "Check",
    "label": "Closure",
    "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "Open\nHold\nClosed",
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2020-09-20 21:58:56.396642",
+ "modified": "2020-09-21 03:20:56.145604",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Evaluate Services Implementation",
