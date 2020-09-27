@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "creation": "2020-09-25 01:56:27.593817",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "generating_activities_by_hhs"
+ ],
+ "fields": [
+  {
+   "fieldname": "generating_activities_by_hhs",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Generating Activities By HHs",
+   "options": "Generating Activities By HHs",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2020-09-25 02:28:54.987103",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "Generating Activities By HHs Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

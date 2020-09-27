@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "autoname": "field:intended_use_of_funds",
+ "creation": "2020-09-25 00:32:47.577241",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "intended_use_of_funds"
+ ],
+ "fields": [
+  {
+   "fieldname": "intended_use_of_funds",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Intended Use of Funds",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "links": [],
+ "modified": "2020-09-25 00:33:14.589319",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "Intended Use of Funds",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

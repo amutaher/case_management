@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "creation": "2020-09-25 00:30:23.606759",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "specific_needs_profile"
+ ],
+ "fields": [
+  {
+   "fieldname": "specific_needs_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Specific Needs Profile",
+   "options": "Specific Needs Profile"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2020-09-25 01:02:46.540575",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "Specific Needs Profile Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

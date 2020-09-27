@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "autoname": "field:specific_needs",
+ "creation": "2020-09-25 00:24:29.738727",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "specific_needs"
+ ],
+ "fields": [
+  {
+   "fieldname": "specific_needs",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Specific Needs",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "links": [],
+ "modified": "2020-09-27 13:26:32.122806",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "Specific Needs Profile",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}
