@@ -38,7 +38,8 @@
   "column_break_30",
   "total_members",
   "section_break_32",
-  "main_occupation"
+  "main_occupation",
+  "general_assessment"
  ],
  "fields": [
   {
@@ -242,10 +243,18 @@
    "fieldtype": "Link",
    "label": "Main Occupation ",
    "options": "Occupation"
+  },
+  {
+   "default": "0",
+   "fieldname": "general_assessment",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "General Assessment",
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2020-09-20 02:01:51.396756",
+ "modified": "2020-09-21 12:52:14.281937",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "General Case",

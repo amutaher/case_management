@@ -1,11 +1,6 @@
 // Copyright (c) 2020, Akram Mutaher and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('CP Closure Form', {
-	// refresh: function(frm) {
-
-	// }
-});
 
 frappe.ui.form.on('CP Closure Form',  'before_submit',  function(frm) {
     if (frm.doc.supervisor != (frappe.session.user)) {
@@ -13,3 +8,23 @@ frappe.ui.form.on('CP Closure Form',  'before_submit',  function(frm) {
         validated = false;
     } 
 });
+
+frappe.ui.form.on('CP Closure Form', {
+	refresh: function(frm) {
+		if(!frm.doc.__islocal) {
+			frm.add_custom_button(__("Case Information"), function() {
+				frappe.set_route("List", "CP Case", {"case_id": frm.doc.case_id});
+			},__('View'));
+			frm.add_custom_button(__("Assessment"), function() {
+				frappe.set_route("List", "CP Assessment", {"case_id": frm.doc.case_id});
+			},__('View'));
+			frm.add_custom_button(__("Action Plan"), function() {
+				frappe.set_route("List", "Case Action Plan", {"case_id": frm.doc.case_id,"from_assessment":'CP Assessment'});
+			},__('View'));
+			frm.add_custom_button(__("Evaluation"), function() {
+				frappe.set_route("List", "Evaluate Services Implementation", {"case_id": frm.doc.case_id});
+			},__('View'));
+		}
+	},
+
+})

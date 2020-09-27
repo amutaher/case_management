@@ -25,7 +25,7 @@ frappe.ui.form.on('GBV Closure Form', {
 				frappe.set_route("List", "GBV Assessment", {"case_id": frm.doc.case_id});
 			},__('View'));
 			frm.add_custom_button(__("Action Plan"), function() {
-				frappe.set_route("List", "Action Plan", {"case_id": frm.doc.case_id,"from_assessment":frm.doc.from_assessment});
+				frappe.set_route("List", "Case Action Plan", {"case_id": frm.doc.case_id,"from_assessment":'GBV Assessment'});
 			},__('View'));
 			frm.add_custom_button(__("Evaluation"), function() {
 				frappe.set_route("List", "Evaluate Services Implementation", {"case_id": frm.doc.case_id});

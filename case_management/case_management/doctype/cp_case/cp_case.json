@@ -40,7 +40,8 @@
   "accommodation",
   "other_accommodation",
   "family_members_living_with_the_child_section",
-  "family_members"
+  "family_members",
+  "cp_assessment"
  ],
  "fields": [
   {
@@ -260,10 +261,18 @@
    "fieldtype": "Table",
    "label": "Family Members",
    "options": "Family Members"
+  },
+  {
+   "default": "0",
+   "fieldname": "cp_assessment",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "CP Assessment",
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2020-09-20 03:09:02.678716",
+ "modified": "2020-09-21 12:45:52.561373",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "CP Case",
