@@ -1,19 +1,148 @@
 {
+ "actions": [],
+ "autoname": "field:cash_assessment_title",
  "creation": "2020-08-24 18:30:41.794326",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "cash_assessment_title",
+  "administration_section",
+  "head_of",
+  "column_break_4",
+  "no_in_family",
+  "column_break_6",
+  "no_in_household",
+  "objective_of_this_protection_cash_assistance_section_section",
+  "cash_assistance_obj",
+  "objective_1",
+  "objective_2",
+  "objective_3",
+  "description_of_protection_section",
+  "description_of_protection_incident_situation",
+  "specific_needs_profile_details_section",
+  "specific_needs_profile",
+  "intended_use_of_funds_details_section",
+  "intended_use_of_funds",
+  "section_break_17",
+  "do_you_recommend_cash"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "cash_assessment_title",
    "fieldtype": "Data",
-   "label": "Name1"
+   "in_list_view": 1,
+   "label": "Cash Assessment Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "administration_section",
+   "fieldtype": "Section Break",
+   "label": "Administration"
+  },
+  {
+   "fieldname": "head_of",
+   "fieldtype": "Select",
+   "label": "Head of the household?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "no_in_family",
+   "fieldtype": "Int",
+   "label": "No. of Individuals in Family"
+  },
+  {
+   "description": "(If Different)",
+   "fieldname": "no_in_household",
+   "fieldtype": "Int",
+   "label": "No. of Individuals in Household"
+  },
+  {
+   "fieldname": "objective_of_this_protection_cash_assistance_section_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cash_assistance_obj",
+   "fieldtype": "Select",
+   "label": "Objective of this Protection Cash Assistance",
+   "options": "\nMitigate or Reduce\nRespond to Urgent and Immediate Consequence\nPrevent Potential Protection Threats"
+  },
+  {
+   "depends_on": "eval:doc.cash_assistance_obj==\"Mitigate or Reduce\"",
+   "fieldname": "objective_1",
+   "fieldtype": "HTML",
+   "label": "Objective 1",
+   "options": "<strong>An existing protection threat facing conflict affected people</strong>"
+  },
+  {
+   "depends_on": "eval:doc.cash_assistance_obj==\"Respond to Urgent and Immediate Consequence\"",
+   "fieldname": "objective_2",
+   "fieldtype": "HTML",
+   "label": "Objective 2",
+   "options": "<strong>Of violence, coercion, deprivation and abuse</strong>"
+  },
+  {
+   "depends_on": "eval:doc.cash_assistance_obj==\"Prevent Potential Protection Threats\"",
+   "fieldname": "objective_3",
+   "fieldtype": "HTML",
+   "label": "Objective 3",
+   "options": "<strong>That might arise as a consequence of specific situation or context</strong>"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "description_of_protection_section",
+   "fieldtype": "Section Break",
+   "label": "Description of Protection"
+  },
+  {
+   "fieldname": "specific_needs_profile_details_section",
+   "fieldtype": "Section Break",
+   "label": "Specific Needs Profile Details"
+  },
+  {
+   "fieldname": "specific_needs_profile",
+   "fieldtype": "Table MultiSelect",
+   "label": "Specific Needs Profile",
+   "options": "Specific Needs Profile Table"
+  },
+  {
+   "fieldname": "intended_use_of_funds_details_section",
+   "fieldtype": "Section Break",
+   "label": "Intended Use of Funds Details"
+  },
+  {
+   "fieldname": "intended_use_of_funds",
+   "fieldtype": "Table MultiSelect",
+   "label": "Intended Use of Funds",
+   "options": "Intended Use of Funds Table"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "do_you_recommend_cash",
+   "fieldtype": "Select",
+   "label": "Do You Recommend the Cash Assistance (75,000 YER)?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "description_of_protection_incident_situation",
+   "fieldtype": "Text Editor",
+   "label": "Description of Protection Incident - Situation"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2020-08-24 18:30:41.794326",
+ "links": [],
+ "modified": "2020-09-25 02:05:44.400976",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Cash Assessment",

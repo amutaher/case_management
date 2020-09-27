@@ -1,19 +1,253 @@
 {
+ "actions": [],
+ "autoname": "naming_series:",
  "creation": "2020-08-24 18:31:15.445384",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "naming_series",
+  "column_break_2",
+  "livelihood_assessment",
+  "bio_data_of_the_individual_section",
+  "head_of",
+  "column_break_4",
+  "no_in_family",
+  "column_break_6",
+  "no_in_household",
+  "section_break_8",
+  "reason_of_livelihood_assistance",
+  "reason_1",
+  "reason_2",
+  "reason_3",
+  "cash_assistance_code",
+  "description_of_protection_section",
+  "description_of_protection_incident_situation",
+  "specific_needs_profile_details_section",
+  "specific_needs_profile",
+  "section_break_17",
+  "cash_assistance_benefit",
+  "case_management_plan_section",
+  "inability_of_cash_assistance_to_protect",
+  "explanation",
+  "section_break_22",
+  "hh_is_facing_protection_risk",
+  "problem_that_requires_long_term_intervention",
+  "can_protection_risks_be_resolved_with_cash",
+  "section_break_28",
+  "assess_the_income_generating_activity",
+  "column_break_30",
+  "assess_what_is_needed_in_terms_of_support",
+  "other",
+  "recommended_assistance_section",
+  "recommend_livelihood_amount",
+  "livelihood_grant_amount"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "livelihood_assessment",
    "fieldtype": "Data",
-   "label": "Name1"
+   "in_list_view": 1,
+   "label": "Livelihood Assessment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bio_data_of_the_individual_section",
+   "fieldtype": "Section Break",
+   "label": "Bio Data of the individual"
+  },
+  {
+   "fieldname": "head_of",
+   "fieldtype": "Select",
+   "label": "Head of the household?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_in_family",
+   "fieldtype": "Int",
+   "label": "No. of Individuals in Family"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "(If Different)",
+   "fieldname": "no_in_household",
+   "fieldtype": "Int",
+   "label": "No. of Individuals in Household"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reason_of_livelihood_assistance",
+   "fieldtype": "Select",
+   "label": "Reason of Selecting Protection Livelihood Assistance",
+   "options": "\nThe protection cash assistance (one-off payment)\nThe vulnerable individual has the capacity to receive livelihood\nThe livelihood intervention is expected to help the individual to prevent protection risk"
+  },
+  {
+   "depends_on": "eval:doc.reason_of_livelihood_assistance==\"The protection cash assistance (one-off payment)\"",
+   "fieldname": "reason_1",
+   "fieldtype": "HTML",
+   "label": "Reason 1",
+   "options": "<strong>Could not address the existing protection risk (or is not relevant)</strong>"
+  },
+  {
+   "depends_on": "eval:doc.reason_of_livelihood_assistance==\"The livelihood intervention is expected to help the individual to prevent protection risk\"",
+   "fieldname": "reason_3",
+   "fieldtype": "HTML",
+   "label": "Reason 3",
+   "options": "<strong>The livelihood intervention is expected to help the individual to prevent, reduce or mitigate an existing protection risk in a more durable manner than the protection cash assistance</strong>"
+  },
+  {
+   "depends_on": "eval:doc.reason_of_livelihood_assistance==\"The protection cash assistance (one-off payment)\"",
+   "fieldname": "cash_assistance_code",
+   "fieldtype": "Float",
+   "label": "Please Type the Cash Assistance Code Number"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "description_of_protection_section",
+   "fieldtype": "Section Break",
+   "label": "Description of Protection"
+  },
+  {
+   "fieldname": "description_of_protection_incident_situation",
+   "fieldtype": "Text Editor",
+   "label": "Description of Protection Incident - Situation"
+  },
+  {
+   "fieldname": "specific_needs_profile_details_section",
+   "fieldtype": "Section Break",
+   "label": "Specific Needs Profile Details"
+  },
+  {
+   "fieldname": "specific_needs_profile",
+   "fieldtype": "Table MultiSelect",
+   "label": "Specific Needs Profile",
+   "options": "Specific Needs Profile Table"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cash_assistance_benefit",
+   "fieldtype": "Select",
+   "label": "Did the Individual - Household Benefit from the Protection Cash Assistance?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.cash_assistance_benefit==\"Yes\"",
+   "fieldname": "case_management_plan_section",
+   "fieldtype": "Section Break",
+   "label": "Case Management Plan"
+  },
+  {
+   "fieldname": "inability_of_cash_assistance_to_protect",
+   "fieldtype": "Select",
+   "label": "Explain Why the Protection Cash Assistance Was Not Able to Resolve or Mitigate the Risk",
+   "options": "\nThe cash amount was not enough\nThe cash amount solved the problem temporarily\nThe risk needs longer intervention\nOther"
+  },
+  {
+   "depends_on": "eval:doc.inability_of_cash_assistance_to_protect==\"Other\"",
+   "fieldname": "explanation",
+   "fieldtype": "Small Text",
+   "label": "Explanation "
+  },
+  {
+   "depends_on": "eval:doc.cash_assistance_benefit==\"No\"",
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hh_is_facing_protection_risk",
+   "fieldtype": "Table MultiSelect",
+   "label": "Assess whether the individual/HH is facing a protection risk",
+   "options": "Protection Risks Table"
+  },
+  {
+   "fieldname": "problem_that_requires_long_term_intervention",
+   "fieldtype": "Select",
+   "label": "whether it constitutes an issue that requires long term intervention rather than an emergency",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "can_protection_risks_be_resolved_with_cash",
+   "fieldtype": "Select",
+   "label": "Can the protection risk or threat can be resolved by livelihood or other income generating activity?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "assess_the_income_generating_activity",
+   "fieldtype": "Table MultiSelect",
+   "label": "Assess What Income Generating Activity Can Be Handled By the Individual / Household",
+   "options": "Generating Activities By HHs Table"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assess_what_is_needed_in_terms_of_support",
+   "fieldtype": "Select",
+   "label": "Assess What is Needed in Terms of Support",
+   "options": "\nCash\nSkills\nFollow Up\nOthers"
+  },
+  {
+   "depends_on": "eval:doc.assess_what_is_needed_in_terms_of_support==\"Others\"",
+   "fieldname": "other",
+   "fieldtype": "Data",
+   "label": "Other"
+  },
+  {
+   "fieldname": "recommended_assistance_section",
+   "fieldtype": "Section Break",
+   "label": "Recommended Assistance"
+  },
+  {
+   "fieldname": "recommend_livelihood_amount",
+   "fieldtype": "Select",
+   "label": "Do You Recommend Protection Livelihood Grant Amount?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.recommend_livelihood_amount==\"Yes\"",
+   "fieldname": "livelihood_grant_amount",
+   "fieldtype": "Currency",
+   "label": "Livelihood Grant Amount"
+  },
+  {
+   "depends_on": "eval:doc.reason_of_livelihood_assistance==\"The vulnerable individual has the capacity to receive livelihood\"",
+   "fieldname": "reason_2",
+   "fieldtype": "HTML",
+   "label": "Reason 2",
+   "options": "<strong>The Vulnerable individual has the capacity and the will to receive livelihood support</strong>"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "LH-ASS-.#####"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2020-08-24 18:31:15.445384",
+ "links": [],
+ "modified": "2020-09-25 02:35:07.947389",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Livelihood Assessment",

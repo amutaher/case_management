@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "autoname": "field:protection_risks",
+ "creation": "2020-09-25 01:33:59.287147",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "protection_risks"
+ ],
+ "fields": [
+  {
+   "fieldname": "protection_risks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Protection Risks",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "links": [],
+ "modified": "2020-09-27 13:36:03.838756",
+ "modified_by": "Administrator",
+ "module": "Case Management",
+ "name": "Protection Risks",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}
