@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2020-08-24 18:14:27.900359",
  "doctype": "DocType",
@@ -274,7 +275,7 @@
   }
  ],
  "links": [],
- "modified": "2020-09-21 01:47:41.180264",
+ "modified": "2020-10-25 11:17:05.908488",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Basic Information",
