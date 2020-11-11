@@ -1,20 +1,145 @@
 {
+ "actions": [],
  "allow_import": 1,
+ "autoname": "naming_series:",
  "creation": "2020-08-24 17:58:14.136673",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "naming_series",
+  "interview_time",
+  "column_break_3",
+  "interviewer_name",
+  "section_break_5",
+  "governorate",
+  "column_break_7",
+  "district",
+  "column_break_9",
+  "area_or_village",
+  "key_informant_section",
+  "name_key",
+  "title",
+  "column_break_14",
+  "sex",
+  "age",
+  "social_background",
+  "other_social_background",
+  "section_break_19",
+  "ex"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "KII-.YYYY.-#####"
+  },
+  {
+   "default": "Now",
+   "fieldname": "interview_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Interview Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interviewer_name",
+   "fieldtype": "Link",
+   "label": "Interviewer Name",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "label": "Governorate",
+   "options": "Governorate"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_or_village",
    "fieldtype": "Data",
-   "label": "Name1"
+   "label": "Area or village"
+  },
+  {
+   "fieldname": "key_informant_section",
+   "fieldtype": "Section Break",
+   "label": "Key Informant"
+  },
+  {
+   "fieldname": "name_key",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title/Role/Organization"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Select",
+   "label": "Sex",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "social_background",
+   "fieldtype": "Select",
+   "label": "Social Background",
+   "options": "IDPs\nHost\nMarginalized\nOther"
+  },
+  {
+   "depends_on": "eval:doc.social_background==\"Other\"",
+   "fieldname": "other_social_background",
+   "fieldtype": "Data",
+   "label": "Other Social Background"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ex",
+   "fieldtype": "HTML",
+   "label": "Ex",
+   "options": "<p>Example introduction; To be read to respondent at the start of the interview \"Hello, my name is XX and I work for XX (organization). I would like to ask you some questions about the protection-related challenges you and your household may be facing. Your participation is voluntary, and you can choose not to answer any or all of the questions. Any personally identifiable information that you provide will be kept strictly confidential. Do you agree to take part of the interview?\"</p>"
   }
  ],
- "modified": "2020-08-25 03:43:14.357443",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2020-11-11 21:20:24.192275",
  "modified_by": "Administrator",
  "module": "CPBNs",
  "name": "Key Information Interview",
