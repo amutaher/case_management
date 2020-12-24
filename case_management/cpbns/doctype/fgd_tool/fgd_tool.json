@@ -1,0 +1,965 @@
+{
+ "actions": [],
+ "creation": "2020-11-08 10:25:00.978614",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enter_date",
+  "start_time",
+  "end_time",
+  "column_break_4",
+  "facilitator_name",
+  "how_were_participants_identified",
+  "please_specify_other_participants_identifications_methos",
+  "section_break_6",
+  "how_the_fgds_was_organized",
+  "number_of_participants",
+  "target_population",
+  "other_specify",
+  "section_break_12",
+  "governorate",
+  "column_break_14",
+  "district",
+  "column_break_16",
+  "area_or_village",
+  "section_break_11",
+  "when_were_people_displaced_to_your_current_location",
+  "from_where_were_people_displaced_to_your_current_location",
+  "for_returness_why_back",
+  "column_break_32",
+  "how_were_people_displaced_to_your_location",
+  "for_returness_why_here",
+  "section_break_26",
+  "idps_problem_faced",
+  "how_many_responded_yes_1",
+  "if_yes_what_were_these_obstacles",
+  "how_many_responded_no_1",
+  "section_break_311",
+  "returnees_able_to_move_freely",
+  "how_many_responded_yes_2",
+  "how_many_responded_no_2",
+  "if_no_why",
+  "if_no_what_are_the_reasons",
+  "section_break_37",
+  "for_idps_what_are_your_future_intentions",
+  "if_others_please_specify",
+  "section_break_30",
+  "any_humanitarian_assistance",
+  "how_many_responded_yes_3",
+  "if_yes_what_was_the_response",
+  "how_many_responded_no_3",
+  "if_other_please_specify",
+  "section_break_44",
+  "humanitarian_assistance_by_ngos_or_un",
+  "section_break_46",
+  "aware_to_access_services",
+  "how_many_responded_yes_4",
+  "if_yes_what_was_the_response_2",
+  "how_many_responded_no_4",
+  "section_break_51",
+  "b4_evaluate_community_last_5_years",
+  "section_break_53",
+  "b5_seriousness_ngos_community_participation",
+  "b5_how_many_responded_yes",
+  "b5_how_many_responded_no",
+  "section_break_57",
+  "b6_challenges_encounter_in_terms_health",
+  "section_break_59",
+  "b7_since_covid_19",
+  "b7_if_yes_who_are_those_groups",
+  "b7_if_yes_what_are_the_reasons",
+  "b7_number_of_participants_who_responded_yes",
+  "b7_what_were_the_accessed_services_during_covid",
+  "b7_number_of_participants_who_responded_no",
+  "section_break_68",
+  "b8_experience_any_type_of_violence",
+  "b8_services_individual_need",
+  "b8_accessible_since_covid_19",
+  "section_break_66",
+  "b9_paid_and_unpaid_work",
+  "d_rotection_risks",
+  "d1_protection_risks_female",
+  "section_break_76",
+  "d2_protection_risks_male",
+  "section_break_766",
+  "d3_identification_papers",
+  "d3_number_of_participants_who_responded_yes_8",
+  "d3_number_of_participants_who_responded_no_8",
+  "d3_reasons",
+  "section_break_73",
+  "d4_other_groups_extraordinary_risk",
+  "d4_number_of_participants_who_responded_yes_9",
+  "d4_who_are_those_groups",
+  "d4_number_of_participants_who_responded_no_9",
+  "section_break_78",
+  "d5_children_able_to_attend_school_in_your_community",
+  "d5_number_of_participants_who_responded_yes_10",
+  "d5_number_of_participants_who_responded_no_10",
+  "d5_reasons",
+  "d5_schools",
+  "section_break_84",
+  "d6_have_persons_comm_inj",
+  "d6_how_many_responded_yes",
+  "d6_how_many_injured",
+  "d6_how_many_killed",
+  "d6_how_many_responded_no",
+  "section_break_90",
+  "d7_children_were_injured",
+  "d7_how_many_responded_yes",
+  "d7_how_many_responded_no",
+  "section_break_94",
+  "d8_witnessed_violence_recently",
+  "d8_how_many_responded_yes",
+  "d8_if_yes_what_type_of_violence_by_whom",
+  "d8_how_many_responded_no",
+  "section_break_99",
+  "d9_heard_of_any_restricted",
+  "d9_how_many_responded_yes",
+  "d9_what_were_circumstance",
+  "d9_how_many_responded_no",
+  "e_social_cohesion",
+  "e1_relation",
+  "e1_high_tension",
+  "e1_mild_tension",
+  "e1_low_tension",
+  "e1_good_relation",
+  "section_break_110",
+  "e2_social_tension",
+  "e2_how_many_responded_yes",
+  "e2_what_did_you_notice",
+  "e2_how_many_responded_no",
+  "section_break_115",
+  "e3_covid_affected_relationship",
+  "section_break_117",
+  "e4_physical_violence",
+  "e4_how_many_responded_yes",
+  "e4_violence_types",
+  "e4_affected_people",
+  "e4_how_many_responded_no",
+  "section_break_123",
+  "e5_other_concerns",
+  "e5_how_many_responded_yes",
+  "e5_what_other_concerns",
+  "e5_how_many_responded_no",
+  "section_break_128",
+  "e6_potential_recommendations",
+  "e6_how_many_responded_yes",
+  "e6_list_recommendation",
+  "e6_how_many_responded_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "enter_date",
+   "fieldtype": "Date",
+   "label": "Enter Date"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "facilitator_name",
+   "fieldtype": "Data",
+   "label": "Facilitator Name"
+  },
+  {
+   "fieldname": "how_were_participants_identified",
+   "fieldtype": "Table MultiSelect",
+   "label": "How were Participants Identified",
+   "options": "Participants Identified"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.how_were_participants_identified && cur_frm.doc.how_were_participants_identified.length && in_list(cur_frm.doc.how_were_participants_identified.map(function(r){ return r.participant_identified}), \"Others\")",
+   "fieldname": "please_specify_other_participants_identifications_methos",
+   "fieldtype": "Data",
+   "label": "Please specify other participants identifications methos"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "how_the_fgds_was_organized",
+   "fieldtype": "Select",
+   "label": "How the FGDs was Organized",
+   "options": "\nPhysical\nVirtual\nPhysical and Virtual"
+  },
+  {
+   "fieldname": "number_of_participants",
+   "fieldtype": "Table",
+   "label": "Number of Participants",
+   "options": "Number of Participants"
+  },
+  {
+   "fieldname": "target_population",
+   "fieldtype": "Table MultiSelect",
+   "label": "Target Population",
+   "options": "Targets Population"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.target_population && cur_frm.doc.target_population.length && in_list(cur_frm.doc.target_population.map(function(r){ return r.target_population}), \"Other, specify\")",
+   "fieldname": "other_specify",
+   "fieldtype": "Data",
+   "label": "Other, specify"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "label": "Governorate",
+   "options": "Governorate"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_or_village",
+   "fieldtype": "Data",
+   "label": "Area or Village"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "when_were_people_displaced_to_your_current_location",
+   "fieldtype": "Table MultiSelect",
+   "label": "When were People Displaced to your Current Location",
+   "options": "Displacement Period Table"
+  },
+  {
+   "fieldname": "from_where_were_people_displaced_to_your_current_location",
+   "fieldtype": "Table MultiSelect",
+   "label": "From where were People Displaced to your Current Location",
+   "options": "Displacement Place Table"
+  },
+  {
+   "fieldname": "for_returness_why_back",
+   "fieldtype": "Small Text",
+   "label": "For Returnees: why did you or your family decided to return back to this location?"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "how_were_people_displaced_to_your_location",
+   "fieldtype": "Data",
+   "label": "How were People Displaced to your Location"
+  },
+  {
+   "fieldname": "for_returness_why_here",
+   "fieldtype": "Small Text",
+   "label": "For Returnees: what are the main reasons or advantages for being here?"
+  },
+  {
+   "fieldname": "section_break_26",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "idps_problem_faced",
+   "fieldtype": "Select",
+   "label": "For IDPs and Returnees Did you faced any obstacles in moving to this current location",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.idps_problem_faced==\"Yes\"",
+   "fieldname": "how_many_responded_yes_1",
+   "fieldtype": "Int",
+   "label": "How Many Responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.idps_problem_faced==\"Yes\"",
+   "fieldname": "if_yes_what_were_these_obstacles",
+   "fieldtype": "Small Text",
+   "label": "If Yes, what were these Obstacles"
+  },
+  {
+   "depends_on": "eval:doc.idps_problem_faced==\"No\"",
+   "fieldname": "how_many_responded_no_1",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  },
+  {
+   "fieldname": "section_break_311",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "returnees_able_to_move_freely",
+   "fieldtype": "Select",
+   "label": "Currently; Are you and other IDPs or Returnees able to move freely and safely in and out of your current location?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.returnees_able_to_move_freely==\"Yes\"",
+   "fieldname": "how_many_responded_yes_2",
+   "fieldtype": "Int",
+   "label": "How Many Responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.returnees_able_to_move_freely==\"No\"",
+   "fieldname": "how_many_responded_no_2",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  },
+  {
+   "depends_on": "eval:doc.returnees_able_to_move_freely==\"No\"",
+   "fieldname": "if_no_why",
+   "fieldtype": "Small Text",
+   "label": "If No, why"
+  },
+  {
+   "depends_on": "eval:doc.returnees_able_to_move_freely==\"No\"",
+   "fieldname": "if_no_what_are_the_reasons",
+   "fieldtype": "Small Text",
+   "label": "If No, what are the reasons"
+  },
+  {
+   "fieldname": "section_break_37",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "for_idps_what_are_your_future_intentions",
+   "fieldtype": "Table",
+   "label": "For IDPs What are your Future Intentions",
+   "options": "For IDPs What are your Future Intentions"
+  },
+  {
+   "fieldname": "if_others_please_specify",
+   "fieldtype": "Small Text",
+   "label": "If others please specify"
+  },
+  {
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "any_humanitarian_assistance",
+   "fieldtype": "Select",
+   "label": "b.1- Has any humanitarian assistance been provided to the population in this location?",
+   "options": "\nYes\nNo\nOther"
+  },
+  {
+   "depends_on": "eval:doc.any_humanitarian_assistance==\"Yes\"",
+   "fieldname": "how_many_responded_yes_3",
+   "fieldtype": "Int",
+   "label": "How many responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.any_humanitarian_assistance==\"Yes\"",
+   "fieldname": "if_yes_what_was_the_response",
+   "fieldtype": "Table MultiSelect",
+   "label": "If Yes, what was the response",
+   "options": "Services"
+  },
+  {
+   "depends_on": "eval:doc.any_humanitarian_assistance==\"No\"",
+   "fieldname": "how_many_responded_no_3",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  },
+  {
+   "depends_on": "eval:doc.any_humanitarian_assistance==\"Other\"",
+   "fieldname": "if_other_please_specify",
+   "fieldtype": "Small Text",
+   "label": "If other, please specify"
+  },
+  {
+   "fieldname": "section_break_44",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "humanitarian_assistance_by_ngos_or_un",
+   "fieldtype": "Small Text",
+   "label": "b.2- How is the community preserving the humanitarian assistance that is provided by INGOs or UN?"
+  },
+  {
+   "fieldname": "section_break_46",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "aware_to_access_services",
+   "fieldtype": "Select",
+   "label": "b.3- Are you aware of how to access the following services (health, nutrition, education, food, child support, women's services, persons wit",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.aware_to_access_services==\"Yes\"",
+   "fieldname": "how_many_responded_yes_4",
+   "fieldtype": "Int",
+   "label": "How many responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.aware_to_access_services==\"Yes\"",
+   "fieldname": "if_yes_what_was_the_response_2",
+   "fieldtype": "Table MultiSelect",
+   "label": "If Yes, what was the response",
+   "options": "Services"
+  },
+  {
+   "depends_on": "eval:doc.aware_to_access_services==\"No\"",
+   "fieldname": "how_many_responded_no_4",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  },
+  {
+   "fieldname": "section_break_51",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "b4_evaluate_community_last_5_years",
+   "fieldtype": "Select",
+   "label": "b.4- How do you evaluate the community participation in the humanitarian response during the recent five years?",
+   "options": "\nSatisfactory\nModerate\nFair\nLow"
+  },
+  {
+   "fieldname": "section_break_53",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "b5_seriousness_ngos_community_participation",
+   "fieldtype": "Select",
+   "label": "b.5- Do you think that INGOs, NGOs and UN is taking seriously the community participation?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.b5_seriousness_ngos_community_participation==\"Yes\"",
+   "fieldname": "b5_how_many_responded_yes",
+   "fieldtype": "Int",
+   "label": "How many responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.b5_seriousness_ngos_community_participation==\"No\"",
+   "fieldname": "b5_how_many_responded_no",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  },
+  {
+   "fieldname": "section_break_57",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "(1 score means very serious or the most challenging issue or barrier that people are encountering, while 5 score refer to less serious issues or barriers)",
+   "fieldname": "b6_challenges_encounter_in_terms_health",
+   "fieldtype": "Table",
+   "label": "b.6- What are the main challenges that men, women, boys and girls encounter in terms of health, education, food, water, or other services?",
+   "options": "Service Challenges"
+  },
+  {
+   "fieldname": "section_break_59",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "b7_since_covid_19",
+   "fieldtype": "Select",
+   "label": "b.7- Since COVID-19 started; Have there been any specific change in access for health, food, WASH, SRHR and other basic services?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.b7_since_covid_19==\"Yes\"",
+   "fieldname": "b7_if_yes_who_are_those_groups",
+   "fieldtype": "Table MultiSelect",
+   "label": "If yes, who are those groups?",
+   "options": "Groups of Vulnerable"
+  },
+  {
+   "depends_on": "eval:doc.b7_since_covid_19==\"Yes\"",
+   "fieldname": "b7_if_yes_what_are_the_reasons",
+   "fieldtype": "Small Text",
+   "label": "If yes, what are the reasons?"
+  },
+  {
+   "depends_on": "eval:doc.b7_since_covid_19==\"Yes\"",
+   "fieldname": "b7_number_of_participants_who_responded_yes",
+   "fieldtype": "Int",
+   "label": "Number of participants who responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.b7_since_covid_19==\"Yes\"",
+   "fieldname": "b7_what_were_the_accessed_services_during_covid",
+   "fieldtype": "Table MultiSelect",
+   "label": "If Yes, what were the accessed services during COVID-19",
+   "options": "Services"
+  },
+  {
+   "depends_on": "eval:doc.b7_since_covid_19==\"No\"",
+   "fieldname": "b7_number_of_participants_who_responded_no",
+   "fieldtype": "Int",
+   "label": "Number of participants who responded No"
+  },
+  {
+   "fieldname": "section_break_68",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "b8_experience_any_type_of_violence",
+   "fieldtype": "Select",
+   "label": "b.8- In case there is anyone from the household / family members has experience any type of violence or similar threats:",
+   "options": "\nYes\nNo"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.b8_experience_any_type_of_violence==\"Yes\"",
+   "fieldname": "b8_services_individual_need",
+   "fieldtype": "Check",
+   "label": "Are there services and/or individual where community members go to for help?"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.b8_experience_any_type_of_violence==\"Yes\"",
+   "fieldname": "b8_accessible_since_covid_19",
+   "fieldtype": "Check",
+   "label": "Are these still accessible since COVID-19?"
+  },
+  {
+   "fieldname": "section_break_66",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "b9_paid_and_unpaid_work",
+   "fieldtype": "Text Editor",
+   "label": "b.9 -Since COVID-19, what are some changes of time women and men are engaged in paid and unpaid work"
+  },
+  {
+   "fieldname": "d_rotection_risks",
+   "fieldtype": "Section Break",
+   "label": "D. Protection risks and needs:"
+  },
+  {
+   "description": "Rank the main protection risks from 1- 5 (5 score means very serious risk they encounter; 1 score refer to the lowest / least serious risk):",
+   "fieldname": "d1_protection_risks_female",
+   "fieldtype": "Table",
+   "label": "d.1- What are the main protection risks or threats faced by women and girls in your community?",
+   "options": "Protection Risk"
+  },
+  {
+   "fieldname": "section_break_76",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Rank the main protection risks from 1- 5 (5 score means very serious risk they encounter; 1 score refer to the lowest / least serious risk):",
+   "fieldname": "d2_protection_risks_male",
+   "fieldtype": "Table",
+   "label": "d.2- What are the main protection risks or threats faced by men and boys in your community?",
+   "options": "Protection Risk"
+  },
+  {
+   "fieldname": "section_break_766",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "d3_identification_papers",
+   "fieldtype": "Select",
+   "label": "d.3- Do you and your family members have Identification papers?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.d3_identification_papers==\"Yes\"",
+   "fieldname": "d3_number_of_participants_who_responded_yes_8",
+   "fieldtype": "Int",
+   "label": "Number of participants who responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.d3_identification_papers==\"No\"",
+   "fieldname": "d3_number_of_participants_who_responded_no_8",
+   "fieldtype": "Int",
+   "label": "Number of participants who responded \"No\"?"
+  },
+  {
+   "depends_on": "eval:doc.d3_identification_papers==\"No\"",
+   "fieldname": "d3_reasons",
+   "fieldtype": "Small Text",
+   "label": "If No, why list the reasons?"
+  },
+  {
+   "fieldname": "section_break_73",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Other Groups (youth, older persons, persons with disabilities)",
+   "fieldname": "d4_other_groups_extraordinary_risk",
+   "fieldtype": "Select",
+   "label": "d.4- Are there any other groups that experience extraordinary risks or challenges?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.d4_other_groups_extraordinary_risk==\"Yes\"",
+   "fieldname": "d4_number_of_participants_who_responded_yes_9",
+   "fieldtype": "Int",
+   "label": "Number of participants who responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.d4_other_groups_extraordinary_risk==\"Yes\"",
+   "fieldname": "d4_who_are_those_groups",
+   "fieldtype": "Table MultiSelect",
+   "label": "If yes, who are those groups?",
+   "options": "Groups of Vulnerable"
+  },
+  {
+   "depends_on": "eval:doc.d4_other_groups_extraordinary_risk==\"No\"",
+   "fieldname": "d4_number_of_participants_who_responded_no_9",
+   "fieldtype": "Int",
+   "label": "Number of participants who responded \"No\"?"
+  },
+  {
+   "fieldname": "section_break_78",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "d5_children_able_to_attend_school_in_your_community",
+   "fieldtype": "Select",
+   "label": "d.5- Are children able to attend school in your community?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.d5_children_able_to_attend_school_in_your_community==\"Yes\"",
+   "fieldname": "d5_number_of_participants_who_responded_yes_10",
+   "fieldtype": "Int",
+   "label": "Number of participants who responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.d5_children_able_to_attend_school_in_your_community==\"No\"",
+   "fieldname": "d5_number_of_participants_who_responded_no_10",
+   "fieldtype": "Int",
+   "label": "Number of participants who responded \"No\"?"
+  },
+  {
+   "depends_on": "eval:doc.d5_children_able_to_attend_school_in_your_community==\"No\"",
+   "fieldname": "d5_reasons",
+   "fieldtype": "Small Text",
+   "label": "If No, please list the reasons?"
+  },
+  {
+   "depends_on": "eval:doc.d5_children_able_to_attend_school_in_your_community==\"No\"",
+   "fieldname": "d5_schools",
+   "fieldtype": "Int",
+   "label": "If no, how many children are out of schools?"
+  },
+  {
+   "fieldname": "section_break_84",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "d6_have_persons_comm_inj",
+   "fieldtype": "Select",
+   "label": "d.6- Have persons (adults) in the community been killed, injured or harmed by the war (airstrikes, shelling, landmines, etc.)?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.d6_have_persons_comm_inj==\"Yes\"",
+   "fieldname": "d6_how_many_responded_yes",
+   "fieldtype": "Int",
+   "label": "How many responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.d6_have_persons_comm_inj==\"Yes\"",
+   "fieldname": "d6_how_many_injured",
+   "fieldtype": "Int",
+   "label": "If yes, how many injured?"
+  },
+  {
+   "depends_on": "eval:doc.d6_have_persons_comm_inj==\"Yes\"",
+   "fieldname": "d6_how_many_killed",
+   "fieldtype": "Int",
+   "label": "If yes, how many killed?"
+  },
+  {
+   "depends_on": "eval:doc.d6_have_persons_comm_inj==\"No\"",
+   "fieldname": "d6_how_many_responded_no",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  },
+  {
+   "fieldname": "section_break_90",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "d7_children_were_injured",
+   "fieldtype": "Select",
+   "label": "d.7- Do you know if any children were injured or affected by conflict, mines, or UXOs?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.d7_children_were_injured==\"Yes\"",
+   "fieldname": "d7_how_many_responded_yes",
+   "fieldtype": "Int",
+   "label": "How many responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.d7_children_were_injured==\"No\"",
+   "fieldname": "d7_how_many_responded_no",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  },
+  {
+   "fieldname": "section_break_94",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "d8_witnessed_violence_recently",
+   "fieldtype": "Select",
+   "label": "d.8- Has anyone you know personally experienced or witnessed violence recently?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.d8_witnessed_violence_recently==\"Yes\"",
+   "fieldname": "d8_how_many_responded_yes",
+   "fieldtype": "Int",
+   "label": "How many responded Yes?"
+  },
+  {
+   "depends_on": "eval:doc.d8_witnessed_violence_recently==\"Yes\"",
+   "fieldname": "d8_if_yes_what_type_of_violence_by_whom",
+   "fieldtype": "Small Text",
+   "label": "If yes what type of violence, and by whom?"
+  },
+  {
+   "depends_on": "eval:doc.d8_witnessed_violence_recently==\"No\"",
+   "fieldname": "d8_how_many_responded_no",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  },
+  {
+   "fieldname": "section_break_99",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "d9_heard_of_any_restricted",
+   "fieldtype": "Select",
+   "label": "d.9- Have you heard of any one being restricted in their movement to other places?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.d9_heard_of_any_restricted==\"Yes\"",
+   "fieldname": "d9_how_many_responded_yes",
+   "fieldtype": "Int",
+   "label": "How many responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.d9_heard_of_any_restricted==\"Yes\"",
+   "fieldname": "d9_what_were_circumstance",
+   "fieldtype": "Small Text",
+   "label": "If yes, what were the circumstance?"
+  },
+  {
+   "depends_on": "eval:doc.d9_heard_of_any_restricted==\"No\"",
+   "fieldname": "d9_how_many_responded_no",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  },
+  {
+   "fieldname": "e_social_cohesion",
+   "fieldtype": "Section Break",
+   "label": "E. Social Cohesion"
+  },
+  {
+   "fieldname": "e1_relation",
+   "fieldtype": "Table MultiSelect",
+   "label": "e.1- How do you see the relations between the host community and IDPs?",
+   "options": "Relations Host community and IDPs"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.e1_relation && cur_frm.doc.e1_relation.length && in_list(cur_frm.doc.e1_relation.map(function(r){ return r.relations_community_and_idps}), \"High Tension\")",
+   "fieldname": "e1_high_tension",
+   "fieldtype": "Int",
+   "label": "How many responded \"High Tension\"?"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.e1_relation && cur_frm.doc.e1_relation.length && in_list(cur_frm.doc.e1_relation.map(function(r){ return r.relations_community_and_idps}), \"Mild Tension\")",
+   "fieldname": "e1_mild_tension",
+   "fieldtype": "Int",
+   "label": "How many responded \"Mild Tension\"?"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.e1_relation && cur_frm.doc.e1_relation.length && in_list(cur_frm.doc.e1_relation.map(function(r){ return r.relations_community_and_idps}), \"Low Tension\")",
+   "fieldname": "e1_low_tension",
+   "fieldtype": "Int",
+   "label": "How many responded \"Low Tension\"?"
+  },
+  {
+   "depends_on": "eval:cur_frm.doc.e1_relation && cur_frm.doc.e1_relation.length && in_list(cur_frm.doc.e1_relation.map(function(r){ return r.relations_community_and_idps}), \"Good Relation\")",
+   "fieldname": "e1_good_relation",
+   "fieldtype": "Int",
+   "label": "How many responded \"Good Relation\"?"
+  },
+  {
+   "fieldname": "section_break_110",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "e2_social_tension",
+   "fieldtype": "Select",
+   "label": "e.2- Have you noticed any recent social tension in the community?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.e2_social_tension==\"Yes\"",
+   "fieldname": "e2_how_many_responded_yes",
+   "fieldtype": "Int",
+   "label": "How many responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.e2_social_tension==\"Yes\"",
+   "description": "For example: host communities and IDPs/host and marginalized groups. Provide relevant information around: Stigmatization, issues related to forced relocation, forced returns, or resettlement.",
+   "fieldname": "e2_what_did_you_notice",
+   "fieldtype": "Small Text",
+   "label": "If yes, what did you notice?"
+  },
+  {
+   "depends_on": "eval:doc.e2_social_tension==\"No\"",
+   "fieldname": "e2_how_many_responded_no",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  },
+  {
+   "fieldname": "section_break_115",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "e3_covid_affected_relationship",
+   "fieldtype": "Small Text",
+   "label": "e.3- How has Covid-19 affected relationship between groups of people in the community?"
+  },
+  {
+   "fieldname": "section_break_117",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "e4_physical_violence",
+   "fieldtype": "Select",
+   "label": "e.3- Is there any physical violence against specific populations that had led or might lead to social exclusion from accessing services?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.e4_physical_violence==\"Yes\"",
+   "fieldname": "e4_how_many_responded_yes",
+   "fieldtype": "Int",
+   "label": "How many responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.e4_physical_violence==\"Yes\"",
+   "fieldname": "e4_violence_types",
+   "fieldtype": "Table MultiSelect",
+   "label": "If yes, what type of violence?",
+   "options": "Violence Types"
+  },
+  {
+   "depends_on": "eval:doc.e4_physical_violence==\"Yes\"",
+   "fieldname": "e4_affected_people",
+   "fieldtype": "Table MultiSelect",
+   "label": "If yes, who are those affected people / groups?",
+   "options": "Groups of Vulnerable"
+  },
+  {
+   "depends_on": "eval:doc.e4_physical_violence==\"No\"",
+   "fieldname": "e4_how_many_responded_no",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  },
+  {
+   "fieldname": "section_break_123",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "e5_other_concerns",
+   "fieldtype": "Select",
+   "label": "e.5- Are there any other concerns you would like to share today?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.e5_other_concerns==\"Yes\"",
+   "fieldname": "e5_how_many_responded_yes",
+   "fieldtype": "Int",
+   "label": "How many responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.e5_other_concerns==\"Yes\"",
+   "fieldname": "e5_what_other_concerns",
+   "fieldtype": "Small Text",
+   "label": "If yes, what are the other concerns:"
+  },
+  {
+   "depends_on": "eval:doc.e5_other_concerns==\"No\"",
+   "fieldname": "e5_how_many_responded_no",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  },
+  {
+   "fieldname": "section_break_128",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "e6_potential_recommendations",
+   "fieldtype": "Select",
+   "label": "e.6- Do you have any potential recommendations or solutions you would like to raise?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.e6_potential_recommendations==\"Yes\"",
+   "fieldname": "e6_how_many_responded_yes",
+   "fieldtype": "Int",
+   "label": "How many responded \"Yes\"?"
+  },
+  {
+   "depends_on": "eval:doc.e6_potential_recommendations==\"Yes\"",
+   "fieldname": "e6_list_recommendation",
+   "fieldtype": "Small Text",
+   "label": "e.6- If yes, please list your recommendation:"
+  },
+  {
+   "depends_on": "eval:doc.e6_potential_recommendations==\"No\"",
+   "fieldname": "e6_how_many_responded_no",
+   "fieldtype": "Int",
+   "label": "How many responded \"No\"?"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2020-11-10 22:20:59.149909",
+ "modified_by": "Administrator",
+ "module": "CPBNs",
+ "name": "FGD Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

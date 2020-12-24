@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "creation": "2020-11-08 12:23:37.685798",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "for_idps_what_are_your_future_intentions",
+  "number_of_participants_go_with_the_option",
+  "comment"
+ ],
+ "fields": [
+  {
+   "fieldname": "for_idps_what_are_your_future_intentions",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "For IDPs; What are your future intentions?",
+   "options": "\nA. To stay in the current location\nB. To move to another area or IDP settlement\nC. To return to your origin place\nD. Others",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number_of_participants_go_with_the_option",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Participants go with the option",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Comment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2020-11-10 20:48:03.566113",
+ "modified_by": "Administrator",
+ "module": "CPBNs",
+ "name": "For IDPs What are your Future Intentions",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

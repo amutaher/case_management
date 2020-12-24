@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "creation": "2020-11-07 22:30:15.916109",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "number_of_participants",
+  "children__adolescents_15_18",
+  "adults_19_49",
+  "elderly_more_50"
+ ],
+ "fields": [
+  {
+   "fieldname": "number_of_participants",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Number of Participants",
+   "options": "\nMen number\nWomen number\nBoys\nGirls",
+   "reqd": 1
+  },
+  {
+   "fieldname": "children__adolescents_15_18",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Children / Adolescents (15-18)"
+  },
+  {
+   "fieldname": "adults_19_49",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Adults (19-49)"
+  },
+  {
+   "fieldname": "elderly_more_50",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Elderly (50+)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2020-11-07 22:38:38.894756",
+ "modified_by": "Administrator",
+ "module": "CPBNs",
+ "name": "Number of Participants",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,20 +1,678 @@
 {
+ "actions": [],
  "allow_import": 1,
+ "autoname": "naming_series:",
  "creation": "2020-08-24 17:58:14.136673",
+ "description": "CPBN",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1"
+  "naming_series",
+  "interview_time",
+  "column_break_3",
+  "interviewer_name",
+  "section_break_5",
+  "governorate",
+  "column_break_7",
+  "district",
+  "column_break_9",
+  "area_or_village",
+  "key_informant_section",
+  "name_key",
+  "title",
+  "column_break_14",
+  "sex",
+  "age",
+  "social_background",
+  "other_social_background",
+  "section_break_19",
+  "ex",
+  "section_break_21",
+  "a1",
+  "people_needs_and_rights",
+  "escalations_of_the_conflict",
+  "html_25",
+  "peace_talk",
+  "progress",
+  "opportunities",
+  "a2",
+  "a3",
+  "section_break_31",
+  "b1",
+  "who_are_they",
+  "why",
+  "covid",
+  "column_break_33",
+  "b2",
+  "section_break_35",
+  "c1",
+  "c2",
+  "c3",
+  "section_break_42",
+  "d1",
+  "d11",
+  "other_violences",
+  "column_break_46",
+  "d12",
+  "other_coercions",
+  "d13",
+  "other_deprivations",
+  "section_break_51",
+  "d2",
+  "d21",
+  "other_violences1",
+  "column_break_54",
+  "d22",
+  "other_coercions1",
+  "d23",
+  "other_deprivations1",
+  "section_break_60",
+  "d3",
+  "d31",
+  "other_violences2",
+  "column_break_62",
+  "d32",
+  "other_coercions2",
+  "d33",
+  "other_deprivations2",
+  "section_break_69",
+  "d4",
+  "d5",
+  "d51",
+  "d52",
+  "column_break_73",
+  "d41",
+  "section_e_section",
+  "e1",
+  "e11",
+  "section_break_76",
+  "f1",
+  "f11",
+  "f12",
+  "column_break_80",
+  "f2",
+  "f3",
+  "f4",
+  "f41",
+  "section_break_88",
+  "g1",
+  "g11",
+  "g2",
+  "g3",
+  "column_break_93",
+  "g4",
+  "g41",
+  "g5",
+  "g51",
+  "g6",
+  "g61"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "KII-.YYYY.-#####"
+  },
+  {
+   "default": "Now",
+   "fieldname": "interview_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Interview Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "interviewer_name",
+   "fieldtype": "Link",
+   "label": "Interviewer Name",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "governorate",
+   "fieldtype": "Link",
+   "label": "Governorate",
+   "options": "Governorate"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_or_village",
    "fieldtype": "Data",
-   "label": "Name1"
+   "label": "Area or village"
+  },
+  {
+   "fieldname": "key_informant_section",
+   "fieldtype": "Section Break",
+   "label": "Key Informant"
+  },
+  {
+   "fieldname": "name_key",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title/Role/Organization"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Select",
+   "label": "Sex",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "social_background",
+   "fieldtype": "Select",
+   "label": "Social Background",
+   "options": "IDPs\nHost\nMarginalized\nOther"
+  },
+  {
+   "depends_on": "eval:doc.social_background==\"Other\"",
+   "fieldname": "other_social_background",
+   "fieldtype": "Data",
+   "label": "Other Social Background"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ex",
+   "fieldtype": "HTML",
+   "label": "Ex",
+   "options": "<p>Example introduction; To be read to respondent at the start of the interview \"Hello, my name is XX and I work for XX (organization). I would like to ask you some questions about the protection-related challenges you and your household may be facing. Your participation is voluntary, and you can choose not to answer any or all of the questions. Any personally identifiable information that you provide will be kept strictly confidential. Do you agree to take part of the interview?\"</p>"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break",
+   "label": "Section A: Current situation and needs of communities"
+  },
+  {
+   "fieldname": "a1",
+   "fieldtype": "HTML",
+   "label": "A1",
+   "options": "<p>A.1 How can you describe the current situation and needs of your community after five years of ongoing conflict in Yemen?</p>"
+  },
+  {
+   "fieldname": "people_needs_and_rights",
+   "fieldtype": "Small Text",
+   "label": "A.1.1 People needs and rights"
+  },
+  {
+   "fieldname": "escalations_of_the_conflict",
+   "fieldtype": "Small Text",
+   "label": "A.1.2 Escalations of the Conflict"
+  },
+  {
+   "fieldname": "html_25",
+   "fieldtype": "HTML",
+   "options": "A.1.3 Yemeni populations satisfactions and opinion on;"
+  },
+  {
+   "fieldname": "peace_talk",
+   "fieldtype": "Select",
+   "label": "Peace talk",
+   "options": "\nNot at all Satisfied\nPartly Satisfied\nSatisfied\nMore than Satisfied\nVery Satisfied"
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Select",
+   "label": "Progress",
+   "options": "\nNot at all Satisfied\nPartly Satisfied\nSatisfied\nMore than Satisfied\nVery Satisfied"
+  },
+  {
+   "fieldname": "opportunities",
+   "fieldtype": "Select",
+   "label": "Opportunities",
+   "options": "\nNot at all Satisfied\nPartly Satisfied\nSatisfied\nMore than Satisfied\nVery Satisfied"
+  },
+  {
+   "fieldname": "a2",
+   "fieldtype": "Small Text",
+   "label": "A.2 How is your community preserving the humanitarian assistance provided by INGOs or UN?"
+  },
+  {
+   "fieldname": "a3",
+   "fieldtype": "Select",
+   "label": "A.3 How do you assess / evaluate your community participation with INGOs, NGOs and other humanitarian actors in the last five years?",
+   "options": "Satisfactory\nModerate\nLow\nFair\nNo participation"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break",
+   "label": "Section B: Displacement trends"
+  },
+  {
+   "fieldname": "b1",
+   "fieldtype": "Select",
+   "label": "B.1 Did you notice any recent displacement/movement to your location/area from IDPs or Returnees?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.b1==\"Yes\"",
+   "fieldname": "who_are_they",
+   "fieldtype": "Data",
+   "label": "who are they"
+  },
+  {
+   "depends_on": "eval:doc.b1==\"Yes\"",
+   "fieldname": "why",
+   "fieldtype": "Small Text",
+   "label": "why did they displace/ return back to your area?"
+  },
+  {
+   "depends_on": "eval:doc.b1==\"Yes\"",
+   "fieldname": "covid",
+   "fieldtype": "Select",
+   "label": "Did you notice if COVID-19 pandemic has any impact on people decisions to move or return back to your location/area?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "b2",
+   "fieldtype": "Select",
+   "label": "B.2 Are you and other IDPs or Returnees able to move freely and safely in and out of your current location?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_35",
+   "fieldtype": "Section Break",
+   "label": "Section C: Access to services"
+  },
+  {
+   "fieldname": "c1",
+   "fieldtype": "Table MultiSelect",
+   "label": "C.1 What are the main available services in your location:",
+   "options": "Services"
+  },
+  {
+   "fieldname": "c2",
+   "fieldtype": "Small Text",
+   "label": "C.2 what are the challenges and obstacles to access services:"
+  },
+  {
+   "fieldname": "c3",
+   "fieldtype": "Small Text",
+   "label": "C.3 How has the ongoing conflict , and COVID-19 impacted/deteriorated the situation to access the services:"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_42",
+   "fieldtype": "Section Break",
+   "label": "Section D: Specialized protection threats"
+  },
+  {
+   "fieldname": "d1",
+   "fieldtype": "Table MultiSelect",
+   "label": "D.1 What are the main protection threats, risks or challenges faced by women and girls in your community:",
+   "options": "Challenges"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d1 && cur_frm.doc.d1.length && in_list(cur_frm.doc.d1.map(function(r){ return r.challenges}), \"VIOLENCE\")",
+   "fieldname": "d11",
+   "fieldtype": "Table MultiSelect",
+   "label": "D.1.1 If you selected \"VIOLENCE\", please select from the following:",
+   "options": "Violences"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d11 && cur_frm.doc.d11.length && in_list(cur_frm.doc.d11.map(function(r){ return r.violences}), \"Other\")",
+   "fieldname": "other_violences",
+   "fieldtype": "Data",
+   "label": "Other Violences"
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d1 && cur_frm.doc.d1.length && in_list(cur_frm.doc.d1.map(function(r){ return r.challenges}), \"COERCION\")",
+   "fieldname": "d12",
+   "fieldtype": "Table MultiSelect",
+   "label": "D.1.2 If you selected \"COERCION\", please select from the following:",
+   "options": "Coercions"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d12 && cur_frm.doc.d12.length && in_list(cur_frm.doc.d12.map(function(r){ return r.coercions}), \"Other\")",
+   "fieldname": "other_coercions",
+   "fieldtype": "Data",
+   "label": "Other Coercions"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d1 && cur_frm.doc.d1.length && in_list(cur_frm.doc.d1.map(function(r){ return r.challenges}), \"DEPRIVATION\")",
+   "fieldname": "d13",
+   "fieldtype": "Table MultiSelect",
+   "label": "D.1.3 If you selected \"DEPRIVATION\", please select from the following:",
+   "options": "Deprivations"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d13 && cur_frm.doc.d13.length && in_list(cur_frm.doc.d13.map(function(r){ return r.deprivations}), \"Other\")",
+   "fieldname": "other_deprivations",
+   "fieldtype": "Data",
+   "label": "Other Deprivations"
+  },
+  {
+   "fieldname": "section_break_51",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "d2",
+   "fieldtype": "Table MultiSelect",
+   "label": "D.2 What are the main protection threats, risks or challenges faced by men and boys in your community:",
+   "options": "Challenges"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d2 && cur_frm.doc.d2.length && in_list(cur_frm.doc.d2.map(function(r){ return r.challenges}), \"VIOLENCE\")",
+   "fieldname": "d21",
+   "fieldtype": "Table MultiSelect",
+   "label": "D.2.1 If you selected \"VIOLENCE\", please select from the following:",
+   "options": "Violences"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d21 && cur_frm.doc.d21.length && in_list(cur_frm.doc.d21.map(function(r){ return r.violences}), \"Other\")",
+   "fieldname": "other_violences1",
+   "fieldtype": "Data",
+   "label": "Other Violences"
+  },
+  {
+   "fieldname": "column_break_54",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d2 && cur_frm.doc.d2.length && in_list(cur_frm.doc.d2.map(function(r){ return r.challenges}), \"COERCION\")",
+   "fieldname": "d22",
+   "fieldtype": "Table MultiSelect",
+   "label": "D.2.2 If you selected \"COERCION\", please select from the following:",
+   "options": "Coercions"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d22 && cur_frm.doc.d22.length && in_list(cur_frm.doc.d22.map(function(r){ return r.coercions}), \"Other\")",
+   "fieldname": "other_coercions1",
+   "fieldtype": "Data",
+   "label": "Other Coercions"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d2 && cur_frm.doc.d2.length && in_list(cur_frm.doc.d2.map(function(r){ return r.challenges}), \"DEPRIVATION\")",
+   "fieldname": "d23",
+   "fieldtype": "Table MultiSelect",
+   "label": "D.2.3 If you selected \"DEPRIVATION\", please select from the following:",
+   "options": "Deprivations"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d23 && cur_frm.doc.d23.length && in_list(cur_frm.doc.d23.map(function(r){ return r.deprivations}), \"Other\")",
+   "fieldname": "other_deprivations1",
+   "fieldtype": "Data",
+   "label": "Other Deprivations"
+  },
+  {
+   "fieldname": "section_break_60",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "d3",
+   "fieldtype": "Table MultiSelect",
+   "label": "D.3 What are the main protection threats, risks or challenges faced by older persons, persons with disabilities in your community:",
+   "options": "Challenges"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d3 && cur_frm.doc.d3.length && in_list(cur_frm.doc.d3.map(function(r){ return r.challenges}), \"VIOLENCE\")",
+   "fieldname": "d31",
+   "fieldtype": "Table MultiSelect",
+   "label": "D.3.1 If you selected \"VIOLENCE\", please select from the following:",
+   "options": "Violences"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d31 && cur_frm.doc.d31.length && in_list(cur_frm.doc.d31.map(function(r){ return r.violences}), \"Other\")",
+   "fieldname": "other_violences2",
+   "fieldtype": "Data",
+   "label": "Other Violences"
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d3 && cur_frm.doc.d3.length && in_list(cur_frm.doc.d3.map(function(r){ return r.challenges}), \"COERCION\")",
+   "fieldname": "d32",
+   "fieldtype": "Table MultiSelect",
+   "label": "D.3.2 If you selected \"COERCION\", please select from the following:",
+   "options": "Coercions"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d32 && cur_frm.doc.d32.length && in_list(cur_frm.doc.d32.map(function(r){ return r.coercions}), \"Other\")",
+   "fieldname": "other_coercions2",
+   "fieldtype": "Data",
+   "label": "Other Coercions"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d3 && cur_frm.doc.d3.length && in_list(cur_frm.doc.d3.map(function(r){ return r.challenges}), \"DEPRIVATION\")",
+   "fieldname": "d33",
+   "fieldtype": "Table MultiSelect",
+   "label": "D.3.3 If you selected \"DEPRIVATION\", please select from the following:",
+   "options": "Deprivations"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.d33 && cur_frm.doc.d33.length && in_list(cur_frm.doc.d33.map(function(r){ return r.deprivations}), \"Other\")",
+   "fieldname": "other_deprivations2",
+   "fieldtype": "Data",
+   "label": "Other Deprivations"
+  },
+  {
+   "fieldname": "section_break_69",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "d4",
+   "fieldtype": "Small Text",
+   "label": "D.4 Since COVID-19, what are some changes you are currently seeing regarding the amount of time women and men are engaged in paid and unpaid"
+  },
+  {
+   "fieldname": "d5",
+   "fieldtype": "Select",
+   "label": "D.5 Are there services and/or individual where community members go to for help, when they have a safety concern or experience violence?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.d5==\"Yes\"",
+   "fieldname": "d51",
+   "fieldtype": "Data",
+   "label": "D5.1 If the answer is \"Yes\", What are these services:"
+  },
+  {
+   "depends_on": "eval:doc.d5==\"Yes\"",
+   "fieldname": "d52",
+   "fieldtype": "Select",
+   "label": "If yes, are these still accessible since COVID-19, e.g. with the imposed restrictions on movement?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_73",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d41",
+   "fieldtype": "Small Text",
+   "label": "D.4.1 Have there been any economic, social, physical or psychological impacts of these changes? Probe: (if there are issues related to sexua"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_e_section",
+   "fieldtype": "Section Break",
+   "label": "Section E: Vulnerability"
+  },
+  {
+   "fieldname": "e1",
+   "fieldtype": "Table MultiSelect",
+   "label": "E.1 In your opinion, who are the most venerable affected people and groups by the ongoing conflict and COVID-19, in your location, and why?",
+   "options": "Venerables"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.e1 && cur_frm.doc.e1.length && in_list(cur_frm.doc.e1.map(function(r){ return r.venerables}), \"Other\")",
+   "fieldname": "e11",
+   "fieldtype": "Data",
+   "label": "If other, please specify:"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_76",
+   "fieldtype": "Section Break",
+   "label": "Section F: Social Cohesion"
+  },
+  {
+   "fieldname": "f1",
+   "fieldtype": "Select",
+   "label": "F.1 Are there signs of social tensions between groups in the population (i.e. displaced and host including marginalized groups like Muhamssh",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.f1==\"Yes\"",
+   "fieldname": "f11",
+   "fieldtype": "Small Text",
+   "label": "F1.1 If yes what are these issues:"
+  },
+  {
+   "depends_on": "eval:doc.f1==\"Yes\"",
+   "fieldname": "f12",
+   "fieldtype": "Small Text",
+   "label": "F.1.2 If yes why:"
+  },
+  {
+   "fieldname": "column_break_80",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "f2",
+   "fieldtype": "Small Text",
+   "label": "F.2 Have you noticed other points of tension in the community, linked to COVID-19 impact?"
+  },
+  {
+   "fieldname": "f3",
+   "fieldtype": "Small Text",
+   "label": "F.3 How is stigma about the virus affecting people?"
+  },
+  {
+   "fieldname": "f4",
+   "fieldtype": "Select",
+   "label": "F.4 Are there any other concerns you would like to raise?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.f4==\"Yes\"",
+   "fieldname": "f41",
+   "fieldtype": "Data",
+   "label": "If yes, what are these concerns:"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_88",
+   "fieldtype": "Section Break",
+   "label": "Section G: Communications with communities during COVID-19"
+  },
+  {
+   "fieldname": "g1",
+   "fieldtype": "Table MultiSelect",
+   "label": "G.1 How has the Covid-19 pandemic and prevention measures affected your work? Your activities?",
+   "options": "Affects"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.g1 && cur_frm.doc.g1.length && in_list(cur_frm.doc.g1.map(function(r){ return r.affects}), \"Other\")",
+   "fieldname": "g11",
+   "fieldtype": "Data",
+   "label": "If other, please specify:"
+  },
+  {
+   "fieldname": "g2",
+   "fieldtype": "Small Text",
+   "label": "G.2 What specific challenges are you facing due to COVID-19 pandemic and its prevention measures?"
+  },
+  {
+   "fieldname": "g3",
+   "fieldtype": "Small Text",
+   "label": "G.3 What adjustments or measures have you adopted to cope with these challenges?"
+  },
+  {
+   "fieldname": "column_break_93",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "g4",
+   "fieldtype": "Table MultiSelect",
+   "label": "G.4 How do you communicate with people in your community during COVID-19 pandemic?",
+   "options": "Communicate Chanels"
+  },
+  {
+   "depends_on": "eval: cur_frm.doc.g4 && cur_frm.doc.g4.length && in_list(cur_frm.doc.g4.map(function(r){ return r.chanel}), \"Other\")",
+   "fieldname": "g41",
+   "fieldtype": "Data",
+   "label": "If other, please specify:"
+  },
+  {
+   "fieldname": "g5",
+   "fieldtype": "Select",
+   "label": "G.5 What is your assessment regarding these means of communication during COVID-19?",
+   "options": "\nGood\nVery Challenging\nOther"
+  },
+  {
+   "depends_on": "eval:doc.g5==\"Other\"",
+   "fieldname": "g51",
+   "fieldtype": "Data",
+   "label": "If other, please specify:"
+  },
+  {
+   "fieldname": "g6",
+   "fieldtype": "Select",
+   "label": "G.6 Do you have other suggestions to improve access to communities or reach out more to communities, in case of any restrictions or lockdown",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.g6==\"Yes\"",
+   "fieldname": "g61",
+   "fieldtype": "Data",
+   "label": "If yes, what are these suggestions:"
   }
  ],
- "modified": "2020-08-25 03:43:14.357443",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2020-11-12 19:45:20.719192",
  "modified_by": "Administrator",
  "module": "CPBNs",
  "name": "Key Information Interview",

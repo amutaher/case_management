@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "creation": "2020-11-08 10:57:28.585578",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "displacement_period"
+ ],
+ "fields": [
+  {
+   "fieldname": "displacement_period",
+   "fieldtype": "Link",
+   "label": "Displacement Period",
+   "options": "Displacement Period",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2020-11-08 10:57:28.585578",
+ "modified_by": "Administrator",
+ "module": "CPBNs",
+ "name": "Displacement Period Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "creation": "2020-11-08 19:41:48.676132",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service_challenges",
+  "challenge_score",
+  "services",
+  "if_other_please_specify"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_challenges",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Service Challenges"
+  },
+  {
+   "fieldname": "challenge_score",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Challenge Score",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table MultiSelect",
+   "label": "Services",
+   "options": "Groups of Vulnerable"
+  },
+  {
+   "fieldname": "if_other_please_specify",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "If other, please specify"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2020-11-08 21:28:39.664113",
+ "modified_by": "Administrator",
+ "module": "CPBNs",
+ "name": "Service Challenges",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
