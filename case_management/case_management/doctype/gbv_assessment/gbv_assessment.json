@@ -213,8 +213,9 @@
    "read_only": 1
   }
  ],
+ "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-09-20 23:28:50.498559",
+ "modified": "2020-12-23 09:06:28.593057",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Assessment",
@@ -235,5 +236,7 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

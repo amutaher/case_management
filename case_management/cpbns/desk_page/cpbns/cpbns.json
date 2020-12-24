@@ -3,7 +3,7 @@
   {
    "hidden": 0,
    "label": "Protection Monitoring",
-   "links": "[\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"Focus Group Discussion\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"Key Information Interview\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"Direct Observation\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"Household Assessment\"\r\n\t}\r\n\r\n]"
+   "links": "[\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"FGD Tool\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"Key Information Interview\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"Direct Observation\"\r\n\t},\r\n\t{\r\n\t\t\"type\": \"doctype\",\r\n\t\t\"name\": \"Household Assessment\"\r\n\t}\r\n\r\n]"
   },
   {
    "hidden": 0,
@@ -33,7 +33,7 @@
  "idx": 0,
  "is_standard": 1,
  "label": "CPBNs",
- "modified": "2020-09-15 05:46:58.239231",
+ "modified": "2020-11-12 19:51:30.642973",
  "modified_by": "Administrator",
  "module": "CPBNs",
  "name": "CPBNs",

@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "creation": "2020-11-12 19:23:56.987603",
+ "description": "CPBNs",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "violences"
+ ],
+ "fields": [
+  {
+   "fieldname": "violences",
+   "fieldtype": "Link",
+   "label": "Violences",
+   "options": "Violence"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2020-11-12 19:32:07.040471",
+ "modified_by": "Administrator",
+ "module": "CPBNs",
+ "name": "Violences",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

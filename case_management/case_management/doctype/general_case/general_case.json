@@ -253,8 +253,9 @@
    "read_only": 1
   }
  ],
+ "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-09-21 12:52:14.281937",
+ "modified": "2020-12-23 09:05:23.940315",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "General Case",
@@ -275,5 +276,7 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

@@ -119,9 +119,10 @@
    "options": "User"
   }
  ],
+ "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2020-09-21 01:49:47.631627",
+ "modified": "2020-12-23 09:07:57.696919",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Closure Form",
@@ -144,5 +145,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1,
- "track_seen": 1
+ "track_seen": 1,
+ "track_views": 1
 }

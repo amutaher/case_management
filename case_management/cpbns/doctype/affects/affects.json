@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "creation": "2020-11-12 19:23:56.817955",
+ "description": "CPBNs",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "affects"
+ ],
+ "fields": [
+  {
+   "fieldname": "affects",
+   "fieldtype": "Link",
+   "label": "Affects",
+   "options": "Affect"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2020-11-12 19:32:07.675557",
+ "modified_by": "Administrator",
+ "module": "CPBNs",
+ "name": "Affects",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

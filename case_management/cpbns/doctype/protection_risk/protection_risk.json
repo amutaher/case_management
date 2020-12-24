@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "creation": "2020-11-10 21:33:41.446402",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rank_of_protection_risk",
+  "protection_risk",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "rank_of_protection_risk",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Rank of Protection Risk",
+   "options": "\n1\n2\n3\n4\n5",
+   "reqd": 1
+  },
+  {
+   "fieldname": "protection_risk",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Protection Risk",
+   "options": "\nNone\nChild Labour\nDomestic Violence\nGBV\nSchools Drop Out\nChild Marriage\nAccess to Basic Services\nDenial of Resources\nHost and IDP Communities Tension\nSafety and Security\nOutdoor Verbal Sexual Harassment During Accessing Services\nOther",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.protection_risk==\"Other\"",
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "If others, please specify"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2020-11-10 22:21:43.470098",
+ "modified_by": "Administrator",
+ "module": "CPBNs",
+ "name": "Protection Risk",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
