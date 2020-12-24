@@ -176,47 +176,6 @@
   },
   {
    "fieldname": "title",
-<<<<<<< HEAD
-   "fieldtype": "Data",
-   "label": "Title/Role/Organization"
-  },
-  {
-   "fieldname": "column_break_14",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "sex",
-   "fieldtype": "Select",
-   "label": "Sex",
-   "options": "Male\nFemale"
-  },
-  {
-   "fieldname": "age",
-   "fieldtype": "Int",
-   "label": "Age"
-  },
-  {
-   "fieldname": "social_background",
-   "fieldtype": "Select",
-   "label": "Social Background",
-   "options": "IDPs\nHost\nMarginalized\nOther"
-  },
-  {
-   "depends_on": "eval:doc.social_background==\"Other\"",
-   "fieldname": "other_social_background",
-   "fieldtype": "Data",
-   "label": "Other Social Background"
-  },
-  {
-   "fieldname": "section_break_19",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "ex",
-   "fieldtype": "HTML",
-   "label": "Ex",
-   "options": "<p>Example introduction; To be read to respondent at the start of the interview \"Hello, my name is XX and I work for XX (organization). I would like to ask you some questions about the protection-related challenges you and your household may be facing. Your participation is voluntary, and you can choose not to answer any or all of the questions. Any personally identifiable information that you provide will be kept strictly confidential. Do you agree to take part of the interview?\"</p>"
-=======
    "fieldtype": "Data",
    "label": "Title/Role/Organization"
   },
@@ -709,16 +668,11 @@
    "fieldname": "g61",
    "fieldtype": "Data",
    "label": "If yes, what are these suggestions:"
->>>>>>> 04e046741321fdcf318324116d72aa01b7af5d98
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
-<<<<<<< HEAD
- "modified": "2020-11-11 21:20:24.192275",
-=======
  "modified": "2020-11-12 19:45:20.719192",
->>>>>>> 04e046741321fdcf318324116d72aa01b7af5d98
  "modified_by": "Administrator",
  "module": "CPBNs",
  "name": "Key Information Interview",
