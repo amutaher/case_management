@@ -138,8 +138,20 @@
   }
  ],
  "in_create": 1,
- "links": [],
- "modified": "2020-09-20 13:55:05.544471",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Direct Services",
+   "link_doctype": "Cash Assessment",
+   "link_fieldname": "tracker_id"
+  },
+  {
+   "group": "Direct Services",
+   "link_doctype": "Livelihood Assessment",
+   "link_fieldname": "tracker_id"
+  }
+ ],
+ "modified": "2020-12-24 20:06:50.276456",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Case Plan Tracker",

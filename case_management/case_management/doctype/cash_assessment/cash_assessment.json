@@ -1,12 +1,16 @@
 {
  "actions": [],
- "autoname": "field:cash_assessment_title",
+ "autoname": "naming_series:",
  "creation": "2020-08-24 18:30:41.794326",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "cash_assessment_title",
+  "column_break_3",
+  "case_id",
+  "tracker_id",
   "administration_section",
   "head_of",
   "column_break_4",
@@ -139,10 +143,34 @@
   {
    "fieldname": "column_break_6",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "CASH-.#####"
+  },
+  {
+   "fieldname": "case_id",
+   "fieldtype": "Link",
+   "label": "Case Id",
+   "options": "Basic Information"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tracker_id",
+   "fieldtype": "Link",
+   "label": "Tracker Id",
+   "options": "Case Plan Tracker"
   }
  ],
+ "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-09-25 02:05:44.400976",
+ "modified": "2020-12-24 20:02:46.036431",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Cash Assessment",

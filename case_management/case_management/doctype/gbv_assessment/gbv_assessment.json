@@ -31,10 +31,11 @@
   "alleged_perpetrator_information_section",
   "number_of_alleged_perpetrator",
   "sex_of_alleged_perpetrator",
-  "column_break_25",
-  "age_group",
   "relationship",
   "occupation",
+  "column_break_25",
+  "age_groups",
+  "age_group",
   "action_plan"
  ],
  "fields": [
@@ -182,6 +183,7 @@
   {
    "fieldname": "age_group",
    "fieldtype": "Table MultiSelect",
+   "hidden": 1,
    "label": "Age group of alleged perpetrator",
    "options": "Age Groups"
   },
@@ -211,11 +213,17 @@
    "hidden": 1,
    "label": "Action Plan",
    "read_only": 1
+  },
+  {
+   "fieldname": "age_groups",
+   "fieldtype": "Table",
+   "label": "Age group of alleged perpetrator",
+   "options": "Age Groups"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-12-23 09:06:28.593057",
+ "modified": "2020-12-24 19:09:43.728829",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Assessment",
