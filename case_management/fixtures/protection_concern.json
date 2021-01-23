@@ -1,0 +1,167 @@
+[
+ {
+  "concern": "Sexually Exploited ",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 11:57:10.490172",
+  "name": "Sexually Exploited",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "Disabled Physically or Mentally Abused",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 11:57:27.025310",
+  "name": "Disabled Physically or Mentally Abused",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "GBV survivor ",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 11:58:29.995326",
+  "name": "GBV survivor",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "Serious Health issue",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 11:59:59.595644",
+  "name": "Serious Health issue",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "Living with vulnerable person",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 12:00:42.719423",
+  "name": "Living with vulnerable person",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "Trafficked/smuggled",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 12:01:15.477180",
+  "name": "Trafficked/smuggled",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "Refugee ",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 12:01:28.077714",
+  "name": "Refugee",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "Worst Forms of Child Labor",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 12:01:41.022251",
+  "name": "Worst Forms of Child Labor",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "Statelessness",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 12:02:11.425240",
+  "name": "Statelessness",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "CAAFAG",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 12:02:50.558529",
+  "name": "CAAFAG",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "Child Headed Household",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 12:03:30.728394",
+  "name": "Child Headed Household",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "Arrested/Detained",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 12:03:45.056154",
+  "name": "Arrested/Detained",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "Street Child",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 12:03:57.833317",
+  "name": "Street Child",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "Mentally Distressed",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 12:04:15.971316",
+  "name": "Mentally Distressed",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "concern": "Migrant Child Mother Other",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Protection Concern",
+  "modified": "2020-09-14 12:04:35.747257",
+  "name": "Migrant Child Mother Other",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

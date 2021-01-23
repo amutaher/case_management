@@ -1,0 +1,102 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Venerable",
+  "modified": "2020-11-12 19:35:32.854151",
+  "name": "Persons with disabilities",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "venerable": "Persons with disabilities"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Venerable",
+  "modified": "2020-11-12 19:35:32.958186",
+  "name": "Persons with other chronic illness including mental health problems",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "venerable": "Persons with other chronic illness including mental health problems"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Venerable",
+  "modified": "2020-11-12 19:35:32.974970",
+  "name": "Destitute older persons",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "venerable": "Destitute older persons"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Venerable",
+  "modified": "2020-11-12 19:35:32.988603",
+  "name": "Older persons providing care to a household",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "venerable": "Older persons providing care to a household"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Venerable",
+  "modified": "2020-11-12 19:35:33.003886",
+  "name": "Single heads-of-household",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "venerable": "Single heads-of-household"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Venerable",
+  "modified": "2020-11-12 19:35:33.020176",
+  "name": "Child-headed household",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "venerable": "Child-headed household"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Venerable",
+  "modified": "2020-11-12 19:35:33.040711",
+  "name": "Internally Displaced Persons (IDPs)",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "venerable": "Internally Displaced Persons (IDPs)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Venerable",
+  "modified": "2020-11-12 19:35:33.058391",
+  "name": "Persons traumatized by the events of the emergency",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "venerable": "Persons traumatized by the events of the emergency"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Venerable",
+  "modified": "2020-11-12 19:35:33.072036",
+  "name": "Children not attending school",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "venerable": "Children not attending school"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Venerable",
+  "modified": "2020-11-12 19:35:33.084089",
+  "name": "Other",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "venerable": "Other"
+ }
+]

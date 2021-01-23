@@ -1,0 +1,57 @@
+[
+ {
+  "description": "The service will be provided by NRC such as legal assistance, legal consultations, ",
+  "docstatus": 0,
+  "doctype": "Service",
+  "modified": "2020-09-07 09:35:09.898317",
+  "name": "legal service",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "service_name": "legal service"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Service",
+  "modified": "2020-09-07 11:22:53.956261",
+  "name": "Shelter",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "service_name": "Shelter "
+ },
+ {
+  "description": "Mental health and psycho-social support services are provided by specialized clinical therapists and psychiatrists. The services are provided for free charge.",
+  "docstatus": 0,
+  "doctype": "Service",
+  "modified": "2020-12-23 08:46:03.112678",
+  "name": "MHPSS services",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "service_name": "MHPSS services"
+ },
+ {
+  "description": "The cash is for protection in order to mitigate or prevent any protection threats or risks",
+  "docstatus": 0,
+  "doctype": "Service",
+  "modified": "2020-12-23 10:38:02.925023",
+  "name": "Protection Cash assistance",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "service_name": "Protection Cash assistance "
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Service",
+  "modified": "2021-01-04 12:48:33.475104",
+  "name": "MFI",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "service_name": "MFI"
+ }
+]

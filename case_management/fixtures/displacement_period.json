@@ -1,0 +1,62 @@
+[
+ {
+  "displacement_period": "Less than a month",
+  "docstatus": 0,
+  "doctype": "Displacement Period",
+  "modified": "2020-11-08 10:54:57.339918",
+  "name": "Less than a month",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "displacement_period": "1 month to 3 months",
+  "docstatus": 0,
+  "doctype": "Displacement Period",
+  "modified": "2020-11-08 10:55:14.159943",
+  "name": "1 month to 3 months",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "displacement_period": "3 months to 6 months",
+  "docstatus": 0,
+  "doctype": "Displacement Period",
+  "modified": "2020-11-08 10:55:24.330073",
+  "name": "3 months to 6 months",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "displacement_period": "6 months to 1 year",
+  "docstatus": 0,
+  "doctype": "Displacement Period",
+  "modified": "2020-11-08 10:55:41.228967",
+  "name": "6 months to 1 year",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "displacement_period": "More than 1 year",
+  "docstatus": 0,
+  "doctype": "Displacement Period",
+  "modified": "2020-11-08 10:55:50.121376",
+  "name": "More than 1 year",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "displacement_period": "I don't remember",
+  "docstatus": 0,
+  "doctype": "Displacement Period",
+  "modified": "2020-11-08 10:56:02.122440",
+  "name": "I don't remember",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

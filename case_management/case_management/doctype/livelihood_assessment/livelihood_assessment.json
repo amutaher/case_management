@@ -50,8 +50,7 @@
    "fieldname": "livelihood_assessment",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Livelihood Assessment",
-   "reqd": 1
+   "label": "Livelihood Assessment"
   },
   {
    "fieldname": "bio_data_of_the_individual_section",
@@ -252,7 +251,8 @@
    "fieldname": "case_id",
    "fieldtype": "Link",
    "label": "Case Id",
-   "options": "Basic Information"
+   "options": "Basic Information",
+   "reqd": 1
   },
   {
    "fieldname": "tracker_id",
@@ -263,7 +263,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-12-24 20:06:15.130536",
+ "modified": "2021-01-23 17:34:00.070933",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Livelihood Assessment",

@@ -1,0 +1,192 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:11:13.101533",
+  "name": "Farmer",
+  "occupation": "Farmer",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:11:49.886008",
+  "name": "Student",
+  "occupation": "Student",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:12:15.428254",
+  "name": "Civil Servant",
+  "occupation": "Civil Servant",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:12:28.605457",
+  "name": "Police",
+  "occupation": "Police",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:12:54.321040",
+  "name": "State Military",
+  "occupation": "State Military",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:13:22.346747",
+  "name": "Trader /Business Owner",
+  "occupation": "Trader /Business Owner",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:14:28.784367",
+  "name": "Non-State Armed Actor /Rebel/Militia",
+  "occupation": "Non-State Armed Actor /Rebel/Militia",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:16:31.504073",
+  "name": "Security Official",
+  "occupation": "Security Official",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:17:05.083762",
+  "name": "Campn or Community Leader",
+  "occupation": "Campn or Community Leader",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:27:27.197473",
+  "name": "Religious Leader",
+  "occupation": "Religious Leader",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:27:56.046617",
+  "name": "Teacher",
+  "occupation": "Teacher",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:28:11.159545",
+  "name": "UN Staff",
+  "occupation": "UN Staff",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:28:31.599067",
+  "name": "NGO Staff",
+  "occupation": "NGO Staff",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:29:06.482260",
+  "name": "CBO Staff",
+  "occupation": "CBO Staff",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:29:40.089076",
+  "name": "Community Volunteer",
+  "occupation": "Community Volunteer",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:30:07.659539",
+  "name": "Health Worker",
+  "occupation": "Health Worker",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:30:15.399506",
+  "name": "Other",
+  "occupation": "Other",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:30:42.747433",
+  "name": "Unemployed",
+  "occupation": "Unemployed",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Occupation",
+  "modified": "2020-09-14 11:30:59.924751",
+  "name": "Unknown",
+  "occupation": "Unknown",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

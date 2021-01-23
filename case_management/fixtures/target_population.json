@@ -1,0 +1,72 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Target Population",
+  "modified": "2020-11-07 22:35:14.305952",
+  "name": "IDPs in Settlements",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "target_population": "IDPs in Settlements"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Target Population",
+  "modified": "2020-11-07 22:35:34.871241",
+  "name": "IDPs living with host families or privately in rural areas",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "target_population": "IDPs living with host families or privately in rural areas"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Target Population",
+  "modified": "2020-11-07 22:35:42.681926",
+  "name": "Returnees",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "target_population": "Returnees"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Target Population",
+  "modified": "2020-11-07 22:37:13.518492",
+  "name": "IDPs Marginalized community ''Muhamasheen''",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "target_population": "IDPs Marginalized community ''Muhamasheen''"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Target Population",
+  "modified": "2020-11-07 22:37:26.661625",
+  "name": "Host Marginalized community ''Muhamasheen''",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "target_population": "Host Marginalized community ''Muhamasheen''"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Target Population",
+  "modified": "2020-11-07 22:38:36.337813",
+  "name": "Conflict-affected host population",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "target_population": "Conflict-affected host population"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Target Population",
+  "modified": "2020-11-07 22:39:11.077541",
+  "name": "Other, specify",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "target_population": "Other, specify"
+ }
+]

@@ -37,7 +37,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Cash Assessment Title",
-   "reqd": 1,
    "unique": 1
   },
   {
@@ -155,7 +154,8 @@
    "fieldname": "case_id",
    "fieldtype": "Link",
    "label": "Case Id",
-   "options": "Basic Information"
+   "options": "Basic Information",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_3",
@@ -170,7 +170,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-12-24 20:02:46.036431",
+ "modified": "2021-01-23 17:33:43.937250",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "Cash Assessment",

@@ -1,0 +1,72 @@
+[
+ {
+  "affect": "Permanent loss of income resources",
+  "docstatus": 0,
+  "doctype": "Affect",
+  "modified": "2020-11-12 19:34:59.156936",
+  "name": "Permanent loss of income resources",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "affect": "Temporarily loss of income resources",
+  "docstatus": 0,
+  "doctype": "Affect",
+  "modified": "2020-11-12 19:34:59.275682",
+  "name": "Temporarily loss of income resources",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "affect": "Number of working hours have been increased with the same payment",
+  "docstatus": 0,
+  "doctype": "Affect",
+  "modified": "2020-11-12 19:34:59.288615",
+  "name": "Number of working hours have been increased with the same payment",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "affect": "The payment has been decreased with the same working hours",
+  "docstatus": 0,
+  "doctype": "Affect",
+  "modified": "2020-11-12 19:34:59.300401",
+  "name": "The payment has been decreased with the same working hours",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "affect": "Both payment and working hours have been affected",
+  "docstatus": 0,
+  "doctype": "Affect",
+  "modified": "2020-11-12 19:34:59.316465",
+  "name": "Both payment and working hours have been affected",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "affect": "Loss of income resources due to limited access",
+  "docstatus": 0,
+  "doctype": "Affect",
+  "modified": "2020-11-12 19:34:59.331003",
+  "name": "Loss of income resources due to limited access",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "affect": "Other",
+  "docstatus": 0,
+  "doctype": "Affect",
+  "modified": "2020-11-12 19:34:59.357327",
+  "name": "Other",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

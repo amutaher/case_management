@@ -1,0 +1,32 @@
+[
+ {
+  "challenge": "VIOLENCE",
+  "docstatus": 0,
+  "doctype": "Challenge",
+  "modified": "2020-11-12 19:32:51.389735",
+  "name": "VIOLENCE",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "challenge": "COERCION",
+  "docstatus": 0,
+  "doctype": "Challenge",
+  "modified": "2020-11-12 19:32:51.554073",
+  "name": "COERCION",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "challenge": "DEPRIVATION",
+  "docstatus": 0,
+  "doctype": "Challenge",
+  "modified": "2020-11-12 19:32:51.578626",
+  "name": "DEPRIVATION",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

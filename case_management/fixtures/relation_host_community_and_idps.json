@@ -1,0 +1,42 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Relation Host community and IDPs",
+  "modified": "2020-11-10 19:56:52.665857",
+  "name": "High Tension",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "relations_community_and_idps": "High Tension"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Relation Host community and IDPs",
+  "modified": "2020-11-10 19:57:05.207555",
+  "name": "Mild Tension",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "relations_community_and_idps": "Mild Tension"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Relation Host community and IDPs",
+  "modified": "2020-11-10 19:57:12.862088",
+  "name": "Low Tension",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "relations_community_and_idps": "Low Tension"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Relation Host community and IDPs",
+  "modified": "2020-11-10 19:57:21.186429",
+  "name": "Good Relation",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "relations_community_and_idps": "Good Relation"
+ }
+]

@@ -1,0 +1,52 @@
+[
+ {
+  "communicate_chanel": "Via Physical Face-to-Face communication",
+  "docstatus": 0,
+  "doctype": "Communicate Chanel",
+  "modified": "2020-11-12 19:37:09.158670",
+  "name": "Via Physical Face-to-Face communication",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "communicate_chanel": "Over telephone (smart phones)",
+  "docstatus": 0,
+  "doctype": "Communicate Chanel",
+  "modified": "2020-11-12 19:37:09.268273",
+  "name": "Over telephone (smart phones)",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "communicate_chanel": "Via zoom, skype, etc",
+  "docstatus": 0,
+  "doctype": "Communicate Chanel",
+  "modified": "2020-11-12 19:37:09.279341",
+  "name": "Via zoom, skype, etc",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "communicate_chanel": "Via Social Media such as Facebook, whatsapp, etc",
+  "docstatus": 0,
+  "doctype": "Communicate Chanel",
+  "modified": "2020-11-12 19:37:09.292969",
+  "name": "Via Social Media such as Facebook, whatsapp, etc",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "communicate_chanel": "Other",
+  "docstatus": 0,
+  "doctype": "Communicate Chanel",
+  "modified": "2020-11-12 19:37:09.305281",
+  "name": "Other",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

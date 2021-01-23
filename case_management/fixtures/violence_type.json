@@ -1,0 +1,68 @@
+[
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Violence Type",
+  "modified": "2020-09-14 10:08:58.224833",
+  "name": "Psychological / Emotional Abuse",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "type": "Psychological / Emotional Abuse"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Violence Type",
+  "modified": "2020-09-14 10:08:58.308797",
+  "name": "Denial of Resources, Opportunities or Services",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "type": "Denial of Resources, Opportunities or Services"
+ },
+ {
+  "description": "includes early marriage",
+  "docstatus": 0,
+  "doctype": "Violence Type",
+  "modified": "2020-09-14 10:08:58.337726",
+  "name": "Forced Marriage",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "type": "Forced Marriage"
+ },
+ {
+  "description": "includes hitting, slapping, kicking, shoving, etc. that are not sexual in nature",
+  "docstatus": 0,
+  "doctype": "Violence Type",
+  "modified": "2020-09-14 10:08:58.361536",
+  "name": "Physical Assault",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "type": "Physical Assault"
+ },
+ {
+  "description": "includes attempted rape and all sexual violence/abuse without penetration, and female genital mutilation/cutting",
+  "docstatus": 0,
+  "doctype": "Violence Type",
+  "modified": "2020-09-14 10:08:58.385282",
+  "name": "Sexual Assault",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "type": "Sexual Assault"
+ },
+ {
+  "description": "includes gang rape, marital rape",
+  "docstatus": 0,
+  "doctype": "Violence Type",
+  "modified": "2020-09-14 10:08:58.409797",
+  "name": "Rape",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "type": "Rape"
+ }
+]

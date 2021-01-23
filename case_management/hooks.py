@@ -127,3 +127,7 @@ app_include_css = "assets/css/erpnext.css"
 # 	"Task": "case_management.task.get_dashboard_data"
 # }
 
+fixtures = ["Participant Identified","Target Population","Governorate","District","Area",
+"Displacement Period","Relation Host community and IDPs","Service","Challenge","Venerable",
+"Affect","Communicate Chanel","Violence Type","Occupation","Comprehensive Reason","Protection Concern",
+"Specific Needs Profile"]

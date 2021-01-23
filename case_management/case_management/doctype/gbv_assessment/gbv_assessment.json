@@ -33,6 +33,7 @@
   "sex_of_alleged_perpetrator",
   "relationship",
   "occupation",
+  "occupation2",
   "column_break_25",
   "age_groups",
   "age_group",
@@ -196,6 +197,7 @@
   {
    "fieldname": "occupation",
    "fieldtype": "Table MultiSelect",
+   "hidden": 1,
    "label": "Main occupation of alleged perpetrator",
    "options": "Occupations"
   },
@@ -219,11 +221,17 @@
    "fieldtype": "Table",
    "label": "Age group of alleged perpetrator",
    "options": "Age Groups"
+  },
+  {
+   "fieldname": "occupation2",
+   "fieldtype": "Table",
+   "label": "Main occupation of alleged perpetrator",
+   "options": "Occupations"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2020-12-24 19:09:43.728829",
+ "modified": "2021-01-07 10:26:26.494908",
  "modified_by": "Administrator",
  "module": "Case Management",
  "name": "GBV Assessment",
